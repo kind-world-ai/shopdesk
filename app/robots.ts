@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://shopdesk.in/sitemap.xml",
+    sitemap: "https://theshopdesk.in/sitemap.xml",
   };
 }

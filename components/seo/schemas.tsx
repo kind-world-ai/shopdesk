@@ -3,8 +3,8 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "ShopDesk",
-    url: "https://shopdesk.in",
-    logo: "https://shopdesk.in/logo.png",
+    url: "https://theshopdesk.in",
+    logo: "https://theshopdesk.in/logo.png",
     description:
       "ShopDesk provides professional business management tools for Indian SMBs — salons, contractors, and shops.",
     address: {

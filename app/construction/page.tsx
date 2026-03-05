@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: "Complete construction billing in Google Sheets. ₹999 one-time.",
     locale: "en_IN",
   },
-  alternates: { canonical: "https://shopdesk.in/construction" },
+  alternates: { canonical: "https://theshopdesk.in/construction" },
 };
 
 const features = [

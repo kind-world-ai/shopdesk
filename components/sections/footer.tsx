@@ -10,10 +10,21 @@ const products = [
 ];
 
 const resources = [
-  { name: "Free Lite Version", href: "#pricing" },
-  { name: "Setup Guide", href: "#how-it-works" },
-  { name: "Formula Reference", href: "#" },
-  { name: "Blog / Case Studies", href: "#" },
+  { name: "Blog", href: "/blog" },
+  { name: "Salon Management Guide", href: "/blog/salon-management-guide" },
+  { name: "Salon Staff Commission", href: "/blog/salon-staff-commission" },
+  { name: "RA Bill Complete Guide", href: "/blog/ra-bill-complete-guide" },
+  { name: "RA Bill Format India", href: "/blog/ra-bill-format-india" },
+  { name: "ShopDesk vs Excel", href: "/vs/basic-excel" },
+  { name: "ShopDesk vs Tally", href: "/vs/tally" },
+];
+
+const cities = [
+  { name: "Chandigarh", href: "/cities/chandigarh" },
+  { name: "Mohali", href: "/cities/mohali" },
+  { name: "Panchkula", href: "/cities/panchkula" },
+  { name: "Ludhiana", href: "/cities/ludhiana" },
+  { name: "Amritsar", href: "/cities/amritsar" },
 ];
 
 export function Footer() {
@@ -25,7 +36,7 @@ export function Footer() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl">
-        <div className="mb-10 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+        <div className="mb-10 grid gap-8 sm:grid-cols-2 md:grid-cols-5">
           {/* Col 1: Brand */}
           <div>
             <Link
@@ -89,18 +100,37 @@ export function Footer() {
             <ul className="space-y-2">
               {resources.map((r) => (
                 <li key={r.name}>
-                  <a
+                  <Link
                     href={r.href}
                     className="text-sm text-cream/60 transition-colors hover:text-cream"
                   >
                     {r.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Col 4: Contact */}
+          {/* Col 4: Cities */}
+          <div>
+            <h4 className="mb-3 text-xs font-bold tracking-wider text-cream/40 uppercase">
+              Cities
+            </h4>
+            <ul className="space-y-2">
+              {cities.map((c) => (
+                <li key={c.name}>
+                  <Link
+                    href={c.href}
+                    className="text-sm text-cream/60 transition-colors hover:text-cream"
+                  >
+                    {c.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Col 5: Contact */}
           <div>
             <h4 className="mb-3 text-xs font-bold tracking-wider text-cream/40 uppercase">
               Contact
@@ -116,7 +146,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-cream/30 md:flex-row">
-          <span>© 2025 ShopDesk. All rights reserved.</span>
+          <span>&copy; 2025 ShopDesk. All rights reserved.</span>
           <div className="flex gap-4">
             <a href="#" className="hover:text-cream/50">
               Privacy Policy

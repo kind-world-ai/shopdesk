@@ -1,8 +1,9 @@
 import { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/products";
+import { getAllCitySlugs } from "@/lib/cities";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://shopdesk.in";
+  const baseUrl = "https://theshopdesk.in";
 
   const productPages = getAllSlugs().flatMap((slug) => [
     {
@@ -18,6 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
   ]);
+
+  const cityPages = getAllCitySlugs().map((slug) => ({
+    url: `${baseUrl}/cities/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   return [
     {
@@ -45,5 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     ...productPages,
+    ...cityPages,
   ];
 }

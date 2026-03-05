@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: "Complete salon CRM in Google Sheets. ₹999 one-time. No subscription.",
     locale: "en_IN",
   },
-  alternates: { canonical: "https://shopdesk.in/salon" },
+  alternates: { canonical: "https://theshopdesk.in/salon" },
 };
 
 const features = [

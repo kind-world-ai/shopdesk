@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     site: "@ShopDeskIN",
   },
   alternates: {
-    canonical: "https://shopdesk.in",
+    canonical: "https://theshopdesk.in",
     languages: {
-      "en-IN": "https://shopdesk.in",
-      "hi-IN": "https://shopdesk.in/hi",
+      "en-IN": "https://theshopdesk.in",
+      "hi-IN": "https://theshopdesk.in/hi",
     },
   },
   robots: {
