@@ -26,6 +26,9 @@ const navLinks = [
       { name: "Blog", href: "/blog" },
       { name: "Salon Management Guide", href: "/blog/salon-management-guide" },
       { name: "RA Bill Guide", href: "/blog/ra-bill-complete-guide" },
+      { name: "Salon Case Study", href: "/case-studies/salon-chandigarh" },
+      { name: "Contractor Case Study", href: "/case-studies/contractor-mohali" },
+      { name: "FAQ", href: "/faq" },
     ],
   },
   {

@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/products";
 import { getAllCitySlugs } from "@/lib/cities";
+import { getAllCaseStudySlugs } from "@/lib/case-studies";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://theshopdesk.in";
@@ -54,5 +55,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...productPages,
     ...cityPages,
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    ...getAllCaseStudySlugs().map((slug) => ({
+      url: `${baseUrl}/case-studies/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
   ];
 }

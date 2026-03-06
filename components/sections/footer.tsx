@@ -17,6 +17,9 @@ const resources = [
   { name: "RA Bill Format India", href: "/blog/ra-bill-format-india" },
   { name: "ShopDesk vs Excel", href: "/vs/basic-excel" },
   { name: "ShopDesk vs Tally", href: "/vs/tally" },
+  { name: "Salon Case Study", href: "/case-studies/salon-chandigarh" },
+  { name: "Contractor Case Study", href: "/case-studies/contractor-mohali" },
+  { name: "FAQ", href: "/faq" },
 ];
 
 const cities = [
