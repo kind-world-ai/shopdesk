@@ -149,7 +149,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-cream/30 md:flex-row">
-          <span>&copy; 2025 ShopDesk. All rights reserved.</span>
+          <span>&copy; 2026 ShopDesk. All rights reserved.</span>
           <div className="flex gap-4">
             <a href="#" className="hover:text-cream/50">
               Privacy Policy

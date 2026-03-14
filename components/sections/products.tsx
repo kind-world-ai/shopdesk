@@ -9,6 +9,8 @@ import {
   BarChart3,
   RefreshCw,
   CheckCircle2,
+  Scissors,
+  HardHat,
 } from "lucide-react";
 
 const salonFeatures = [
@@ -61,35 +63,45 @@ export function ProductsSection() {
   return (
     <section className="bg-cream px-4 py-16 md:px-8 md:py-24">
       <div className="mx-auto max-w-5xl">
+        {/* Section label */}
+        <p className="mb-3 text-center text-sm font-semibold tracking-widest text-teal uppercase">
+          Products
+        </p>
+        <h2 className="mb-8 text-center text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
+          Built for Your Industry
+        </h2>
+
         {/* Tab selector */}
-        <div className="mb-8 flex gap-1 rounded-xl bg-navy/5 p-1">
+        <div className="mb-8 flex gap-1.5 rounded-2xl border border-gray-200 bg-white p-1.5">
           <button
             onClick={() => setActiveTab("salon")}
-            className={`flex-1 rounded-lg px-4 py-3 text-sm font-bold transition-all ${
+            className={`flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition-all duration-200 ${
               activeTab === "salon"
-                ? "bg-white text-navy shadow-sm"
-                : "text-navy/50"
+                ? "bg-navy text-white shadow-sm"
+                : "text-mid-grey hover:text-navy"
             }`}
           >
-            💇 Salon CRM
+            <Scissors size={16} />
+            Salon CRM
           </button>
           <button
             onClick={() => setActiveTab("construction")}
-            className={`flex-1 rounded-lg px-4 py-3 text-sm font-bold transition-all ${
+            className={`flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition-all duration-200 ${
               activeTab === "construction"
-                ? "bg-white text-navy shadow-sm"
-                : "text-navy/50"
+                ? "bg-navy text-white shadow-sm"
+                : "text-mid-grey hover:text-navy"
             }`}
           >
-            🏗️ Construction CRM
+            <HardHat size={16} />
+            Construction CRM
           </button>
         </div>
 
         {/* Tab content */}
-        <div className="min-h-[400px]">
+        <div className="min-h-[380px]">
           {activeTab === "salon" ? (
             <div>
-              <h2 className="mb-2 font-[var(--font-heading)] text-xl font-bold text-navy md:text-2xl">
+              <h2 className="mb-1.5 text-xl font-bold text-navy md:text-2xl">
                 ShopDesk Salon CRM
               </h2>
               <p className="mb-6 text-sm text-mid-grey">
@@ -97,15 +109,14 @@ export function ProductsSection() {
                 Chandigarh, Mohali, and across Punjab
               </p>
 
-              {/* Feature grid */}
               <div className="mb-8 grid grid-cols-2 gap-3 md:grid-cols-3">
                 {salonFeatures.map((f) => (
                   <div
                     key={f.title}
-                    className="rounded-xl border border-navy/5 bg-white p-4"
+                    className="card-hover rounded-2xl border border-gray-200 bg-white p-4"
                   >
-                    <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-orange/10">
-                      <f.icon size={20} className="text-orange" />
+                    <div className="mb-2.5 flex h-10 w-10 items-center justify-center rounded-xl bg-orange/10">
+                      <f.icon size={18} className="text-orange" />
                     </div>
                     <h3 className="text-sm font-bold text-navy">{f.title}</h3>
                     <p className="text-xs text-mid-grey">{f.desc}</p>
@@ -115,14 +126,14 @@ export function ProductsSection() {
 
               <a
                 href="#pricing"
-                className="inline-flex w-full items-center justify-center rounded-full bg-orange px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-orange-hover md:w-auto"
+                className="btn-glow inline-flex cursor-pointer w-full items-center justify-center gap-2 rounded-full bg-orange px-6 py-3.5 text-base font-bold text-white transition-all hover:bg-orange-hover md:w-auto"
               >
-                Download Salon CRM — ₹999 →
+                Download Salon CRM — ₹999
               </a>
             </div>
           ) : (
             <div>
-              <h2 className="mb-2 font-[var(--font-heading)] text-xl font-bold text-navy md:text-2xl">
+              <h2 className="mb-1.5 text-xl font-bold text-navy md:text-2xl">
                 ShopDesk Construction CRM
               </h2>
               <p className="mb-6 text-sm text-mid-grey">
@@ -130,12 +141,14 @@ export function ProductsSection() {
                 in Mohali, Ludhiana, and Delhi NCR
               </p>
 
-              {/* Feature list */}
               <div className="mb-8 space-y-3">
                 {constructionFeatures.map((f) => (
-                  <div key={f} className="flex items-start gap-3">
+                  <div
+                    key={f}
+                    className="flex items-start gap-3 rounded-xl border border-gray-200 bg-white p-4"
+                  >
                     <CheckCircle2
-                      size={20}
+                      size={18}
                       className="mt-0.5 shrink-0 text-teal"
                     />
                     <span className="text-sm font-medium text-navy md:text-base">
@@ -147,9 +160,9 @@ export function ProductsSection() {
 
               <a
                 href="#pricing"
-                className="inline-flex w-full items-center justify-center rounded-full bg-orange px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-orange-hover md:w-auto"
+                className="btn-glow inline-flex cursor-pointer w-full items-center justify-center gap-2 rounded-full bg-orange px-6 py-3.5 text-base font-bold text-white transition-all hover:bg-orange-hover md:w-auto"
               >
-                Download Construction CRM — ₹999 →
+                Download Construction CRM — ₹999
               </a>
             </div>
           )}

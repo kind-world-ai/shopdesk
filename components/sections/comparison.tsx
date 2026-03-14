@@ -1,105 +1,121 @@
 "use client";
 
+import { CheckCircle2, XCircle, MinusCircle, ArrowRight } from "lucide-react";
+
 const rows = [
   {
     feature: "Price",
-    paper: "₹0",
-    excel: "₹0",
-    erp: "₹5k–15k/mo",
-    shopdesk: "₹999 one-time ✅",
+    paper: { text: "₹0", status: "neutral" },
+    excel: { text: "₹0", status: "neutral" },
+    erp: { text: "₹5k–15k/mo", status: "bad" },
+    shopdesk: { text: "₹999 one-time", status: "good" },
   },
   {
     feature: "RA Bill Auto-Calculation",
-    paper: "❌",
-    excel: "Manual",
-    erp: "✅",
-    shopdesk: "✅",
+    paper: { text: "Manual", status: "bad" },
+    excel: { text: "Manual", status: "bad" },
+    erp: { text: "Yes", status: "good" },
+    shopdesk: { text: "Yes", status: "good" },
   },
   {
     feature: "GST + TDS + Retention",
-    paper: "❌",
-    excel: "Manual",
-    erp: "✅",
-    shopdesk: "✅",
+    paper: { text: "Manual", status: "bad" },
+    excel: { text: "Manual", status: "bad" },
+    erp: { text: "Yes", status: "good" },
+    shopdesk: { text: "Yes", status: "good" },
   },
   {
     feature: "Works on Mobile Phone",
-    paper: "✅ (paper)",
-    excel: "❌",
-    erp: "App only",
-    shopdesk: "✅ Google Sheets",
+    paper: { text: "Paper only", status: "neutral" },
+    excel: { text: "Limited", status: "bad" },
+    erp: { text: "App only", status: "neutral" },
+    shopdesk: { text: "Google Sheets", status: "good" },
   },
   {
     feature: "No IT Setup Required",
-    paper: "✅",
-    excel: "✅",
-    erp: "❌",
-    shopdesk: "✅",
+    paper: { text: "Yes", status: "good" },
+    excel: { text: "Yes", status: "good" },
+    erp: { text: "No", status: "bad" },
+    shopdesk: { text: "Yes", status: "good" },
   },
   {
     feature: "EVM Dashboard",
-    paper: "❌",
-    excel: "❌",
-    erp: "Some plans",
-    shopdesk: "✅",
+    paper: { text: "No", status: "bad" },
+    excel: { text: "No", status: "bad" },
+    erp: { text: "Some plans", status: "neutral" },
+    shopdesk: { text: "Included", status: "good" },
   },
   {
     feature: "Payment Aging Tracker",
-    paper: "❌",
-    excel: "❌",
-    erp: "✅",
-    shopdesk: "✅",
+    paper: { text: "No", status: "bad" },
+    excel: { text: "No", status: "bad" },
+    erp: { text: "Yes", status: "good" },
+    shopdesk: { text: "Included", status: "good" },
   },
   {
-    feature: "Data On Your Google Drive",
-    paper: "Paper",
-    excel: "Your PC",
-    erp: "Their servers",
-    shopdesk: "Your Drive ✅",
+    feature: "Data Ownership",
+    paper: { text: "Paper", status: "neutral" },
+    excel: { text: "Your PC", status: "neutral" },
+    erp: { text: "Their servers", status: "bad" },
+    shopdesk: { text: "Your Drive", status: "good" },
   },
   {
     feature: "Setup Time",
-    paper: "0 min",
-    excel: "Days",
-    erp: "5–30 days",
-    shopdesk: "15 minutes ✅",
+    paper: { text: "0 min", status: "neutral" },
+    excel: { text: "Days", status: "bad" },
+    erp: { text: "5–30 days", status: "bad" },
+    shopdesk: { text: "15 minutes", status: "good" },
   },
   {
     feature: "Monthly Subscription",
-    paper: "❌",
-    excel: "❌",
-    erp: "₹5k–15k",
-    shopdesk: "₹0 forever ✅",
+    paper: { text: "None", status: "good" },
+    excel: { text: "None", status: "good" },
+    erp: { text: "₹5k–15k", status: "bad" },
+    shopdesk: { text: "₹0 forever", status: "good" },
   },
 ];
 
+function StatusIcon({ status }: { status: string }) {
+  if (status === "good")
+    return <CheckCircle2 size={15} className="text-teal shrink-0" />;
+  if (status === "bad")
+    return <XCircle size={15} className="text-red-400 shrink-0" />;
+  return <MinusCircle size={15} className="text-mid-grey/40 shrink-0" />;
+}
+
 export function ComparisonSection() {
   return (
-    <section className="bg-cream px-4 py-16 md:px-8 md:py-24">
+    <section className="bg-[#1E293B] px-4 py-16 md:px-8 md:py-24">
       <div className="mx-auto max-w-6xl">
-        <h2 className="mb-8 text-center font-[var(--font-heading)] text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
+        <p className="mb-3 text-center text-sm font-semibold tracking-widest text-[#14B8A6] uppercase">
+          Comparison
+        </p>
+        <h2 className="mb-3 text-center text-[1.75rem] font-extrabold text-white md:text-[2.5rem]">
           Why 500+ Businesses Chose ShopDesk
           <br className="hidden md:block" /> Over ₹5,000/Month Software
         </h2>
+        <p className="mb-10 text-center text-sm text-white/40">
+          ShopDesk wins 8 out of 10 categories — at 1/150th the cost of ERP.
+        </p>
 
         {/* Table */}
-        <div className="overflow-x-auto rounded-xl border border-navy/10 bg-white">
+        <div className="overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full min-w-[640px] text-left text-sm">
             <thead>
-              <tr className="border-b border-navy/10 bg-navy/[0.03]">
-                <th className="px-4 py-3 text-xs font-bold tracking-wider text-navy uppercase">
+              <tr className="border-b border-white/10">
+                <th className="px-5 py-3.5 text-xs font-bold tracking-wider text-white/40 uppercase">
                   Feature
                 </th>
-                <th className="px-3 py-3 text-xs font-bold tracking-wider text-navy/50 uppercase">
+                <th className="px-4 py-3.5 text-xs font-bold tracking-wider text-white/30 uppercase">
                   Paper
                 </th>
-                <th className="px-3 py-3 text-xs font-bold tracking-wider text-navy/50 uppercase">
+                <th className="px-4 py-3.5 text-xs font-bold tracking-wider text-white/30 uppercase">
                   Excel
                 </th>
-                <th className="px-3 py-3 text-xs font-bold tracking-wider text-navy/50 uppercase">
+                <th className="px-4 py-3.5 text-xs font-bold tracking-wider text-white/30 uppercase">
                   ERP
                 </th>
-                <th className="px-3 py-3 text-xs font-bold tracking-wider text-orange uppercase">
+                <th className="bg-orange/10 px-4 py-3.5 text-xs font-bold tracking-wider text-orange uppercase">
                   ShopDesk ₹999
                 </th>
               </tr>
@@ -108,16 +124,27 @@ export function ComparisonSection() {
               {rows.map((row, i) => (
                 <tr
                   key={row.feature}
-                  className={i % 2 === 0 ? "" : "bg-navy/[0.015]"}
+                  className={`border-b border-white/5 ${
+                    i % 2 === 0 ? "" : "bg-white/[0.02]"
+                  }`}
                 >
-                  <td className="px-4 py-3 font-medium text-navy">
+                  <td className="px-5 py-3.5 font-medium text-white/80">
                     {row.feature}
                   </td>
-                  <td className="px-3 py-3 text-navy/50">{row.paper}</td>
-                  <td className="px-3 py-3 text-navy/50">{row.excel}</td>
-                  <td className="px-3 py-3 text-navy/50">{row.erp}</td>
-                  <td className="px-3 py-3 font-semibold text-teal">
-                    {row.shopdesk}
+                  <td className="px-4 py-3.5 text-white/35">
+                    {row.paper.text}
+                  </td>
+                  <td className="px-4 py-3.5 text-white/35">
+                    {row.excel.text}
+                  </td>
+                  <td className="px-4 py-3.5 text-white/35">
+                    {row.erp.text}
+                  </td>
+                  <td className="bg-orange/5 px-4 py-3.5">
+                    <div className="flex items-center gap-2 font-semibold text-[#14B8A6]">
+                      <StatusIcon status={row.shopdesk.status} />
+                      {row.shopdesk.text}
+                    </div>
                   </td>
                 </tr>
               ))}
@@ -125,17 +152,13 @@ export function ComparisonSection() {
           </table>
         </div>
 
-        <p className="mt-6 text-center text-sm font-semibold text-navy/70">
-          ShopDesk wins 8 out of 10 categories — at{" "}
-          <span className="text-orange">1/150th the cost</span> of ERP.
-        </p>
-
-        <div className="mt-6 text-center">
+        <div className="mt-8 text-center">
           <a
             href="#pricing"
-            className="inline-flex w-full items-center justify-center rounded-full bg-orange px-6 py-3.5 text-base font-bold text-white transition-colors hover:bg-orange-hover md:w-auto"
+            className="btn-glow inline-flex cursor-pointer items-center gap-2 rounded-full bg-orange px-7 py-3.5 text-base font-bold text-white transition-all hover:bg-orange-hover"
           >
-            Download Now — ₹999 →
+            Download Now — ₹999
+            <ArrowRight size={16} />
           </a>
         </div>
       </div>

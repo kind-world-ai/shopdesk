@@ -51,7 +51,10 @@ export function FAQSection() {
       <FAQSchema faqs={faqs} />
 
       <div className="mx-auto max-w-3xl">
-        <h2 className="mb-2 text-center font-[var(--font-heading)] text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
+        <p className="mb-3 text-center text-sm font-semibold tracking-widest text-teal uppercase">
+          FAQ
+        </p>
+        <h2 className="mb-2 text-center text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
           Frequently Asked Questions
         </h2>
         <p className="mb-10 text-center text-base text-mid-grey">
@@ -62,12 +65,12 @@ export function FAQSection() {
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="overflow-hidden rounded-xl border border-navy/5 bg-white"
+              className="overflow-hidden rounded-2xl border border-gray-200 bg-white"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left md:px-6"
-                style={{ minHeight: "52px" }}
+                className="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-gray-100/50 md:px-6"
+                style={{ minHeight: "56px" }}
               >
                 <span className="text-sm font-semibold text-navy md:text-base">
                   {faq.question}

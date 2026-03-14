@@ -1,19 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy: #1A1A2E;
-  --color-orange: #E87722;
-  --color-orange-hover: #D06A1E;
-  --color-teal: #00897B;
-  --color-alert: #C62828;
-  --color-gold: #F9A825;
-  --color-cream: #F8F6F0;
-  --color-dark-text: #1A1A2E;
-  --color-mid-grey: #6B7280;
-  --color-light-grey: #F3F4F6;
+  --color-navy: #0F172A;
+  --color-navy-light: #1E293B;
+  --color-orange: #EA6C1A;
+  --color-orange-hover: #C85E15;
+  --color-teal: #0D9488;
+  --color-teal-light: #14B8A6;
+  --color-alert: #DC2626;
+  --color-gold: #F59E0B;
+  --color-cream: #F8FAFC;
+  --color-dark-text: #0F172A;
+  --color-mid-grey: #64748B;
+  --color-light-grey: #F1F5F9;
+  --color-border: #E2E8F0;
 
-  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: var(--font-jakarta), system-ui, sans-serif;
+  --font-body: var(--font-jakarta), system-ui, sans-serif;
 }
 
 /* Base resets */
@@ -27,6 +30,8 @@ body {
   font-family: var(--font-body);
   color: var(--color-dark-text);
   background-color: var(--color-cream);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,4 +81,35 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Subtle grid background for hero */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Smooth card hover */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.10);
+}
+
+/* Glow effect for CTA buttons */
+.btn-glow:hover {
+  box-shadow: 0 4px 20px rgba(234, 108, 26, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-hover:hover {
+    transform: none;
+  }
+  .animate-slide-up {
+    animation: none;
+  }
 }

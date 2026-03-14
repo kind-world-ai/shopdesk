@@ -27,12 +27,12 @@ export function BottomCTA() {
   if (!visible) return null;
 
   return (
-    <div className="animate-slide-up fixed bottom-0 left-0 right-0 z-50 border-t border-navy/10 bg-white/95 px-4 py-3 backdrop-blur-md md:hidden">
+    <div className="animate-slide-up fixed bottom-4 left-4 right-4 z-50 rounded-2xl border border-gray-200 bg-white/95 px-4 py-3 shadow-xl shadow-navy/10 backdrop-blur-md md:hidden">
       <Link
         href="/shop"
-        className="flex w-full items-center justify-center gap-2 rounded-full bg-orange py-3.5 text-sm font-bold text-white min-h-[48px]"
+        className="btn-glow flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-orange py-3.5 text-sm font-bold text-white min-h-[48px] transition-all hover:bg-orange-hover"
       >
-        ShopDesk — Browse Products →
+        ShopDesk — Browse Products
       </Link>
     </div>
   );
