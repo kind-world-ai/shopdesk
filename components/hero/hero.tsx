@@ -11,11 +11,11 @@ const trustPills = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-navy hero-grid px-4 pt-24 pb-16 md:px-8 md:pt-32 md:pb-24">
+    <section className="relative overflow-x-hidden bg-navy hero-grid px-4 pt-24 pb-16 md:px-8 md:pt-32 md:pb-24">
       {/* Subtle glow */}
       <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-64 w-[600px] rounded-full bg-orange/10 blur-3xl" />
 
-      <div className="relative mx-auto max-w-7xl md:flex md:items-center md:gap-16">
+      <div className="relative mx-auto max-w-7xl md:flex md:items-center md:gap-16 min-w-0">
         {/* Text content */}
         <div className="md:w-[55%]">
           {/* Trust pill */}
@@ -70,13 +70,13 @@ export function Hero() {
         </div>
 
         {/* Dashboard mockup */}
-        <div className="mt-12 md:mt-0 md:w-[45%]">
-          <div className="relative mx-auto max-w-[400px]">
+        <div className="mt-10 md:mt-0 md:w-[45%] min-w-0">
+          <div className="relative mx-auto max-w-[360px] md:max-w-[400px]">
             {/* Glow behind card */}
             <div className="absolute inset-0 rounded-3xl bg-orange/10 blur-2xl scale-95" />
 
             {/* Card */}
-            <div className="relative rounded-3xl border border-white/10 bg-navy-light/80 p-5 shadow-2xl backdrop-blur-sm">
+            <div className="relative rounded-3xl border border-white/10 bg-[#1E293B] p-5 shadow-2xl backdrop-blur-sm">
               {/* Header bar */}
               <div className="mb-4 flex items-center justify-between">
                 <div>

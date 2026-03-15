@@ -161,8 +161,8 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-navy/10 bg-white px-4 py-4 shadow-lg lg:hidden max-h-[80vh] overflow-y-auto">
-          <div className="flex flex-col gap-1">
+        <div className={`bg-white shadow-lg lg:hidden max-h-[80vh] overflow-y-auto ${!isDark ? "mx-3 mt-1 rounded-2xl border border-gray-200" : "border-t border-navy/10"}`}>
+          <div className="px-4 py-4 flex flex-col gap-1">
             {navLinks.map((group) => (
               <div key={group.label}>
                 <button
