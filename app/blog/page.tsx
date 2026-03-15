@@ -24,10 +24,10 @@ export default function BlogIndexPage() {
     <section className="bg-cream px-4 pt-20 pb-16 md:px-8 md:pt-28 md:pb-24">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
-        <p className="mb-2 text-center text-xs font-bold tracking-wider text-orange uppercase">
+        <p className="mb-3 text-center text-sm font-semibold tracking-widest text-teal uppercase">
           ShopDesk Blog
         </p>
-        <h1 className="mb-3 text-center font-[var(--font-heading)] text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
+        <h1 className="mb-3 text-center text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
           Business Tips for Indian SMBs
         </h1>
         <p className="mx-auto mb-10 max-w-xl text-center text-base text-mid-grey">

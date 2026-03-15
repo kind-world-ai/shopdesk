@@ -11,7 +11,7 @@ export function ProductCard({ product }: { product: Product }) {
       className={`relative flex flex-col rounded-2xl p-5 md:p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl ${
         isPopular
           ? "border-2 border-orange bg-white shadow-lg shadow-orange/10"
-          : "border border-navy/5 bg-white shadow-sm"
+          : "border border-gray-200 bg-white shadow-sm"
       }`}
     >
       {isPopular && (
@@ -57,23 +57,23 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="flex flex-col gap-2">
         <Link
           href={`/shop/${product.slug}`}
-          className="flex w-full items-center justify-center rounded-full border border-navy/20 px-4 py-3 text-sm font-bold text-navy transition-colors hover:bg-navy/5 min-h-[48px]"
+          className="flex w-full cursor-pointer items-center justify-center rounded-full border border-navy/20 px-4 py-3 text-sm font-bold text-navy transition-colors hover:bg-navy/5 min-h-[48px]"
         >
-          View Details →
+          View Details
         </Link>
         {isFree ? (
           <Link
             href={`/shop/${product.slug}`}
-            className="flex w-full items-center justify-center rounded-full bg-navy text-white px-4 py-3 text-sm font-bold transition-colors hover:bg-navy/90 min-h-[48px]"
+            className="flex w-full cursor-pointer items-center justify-center rounded-full bg-navy text-white px-4 py-3 text-sm font-bold transition-colors hover:bg-navy/90 min-h-[48px]"
           >
-            Download Free →
+            Download Free
           </Link>
         ) : (
           <Link
             href={`/checkout/${product.slug}`}
-            className="flex w-full items-center justify-center rounded-full bg-orange px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-hover min-h-[48px]"
+            className="btn-glow flex w-full cursor-pointer items-center justify-center rounded-full bg-orange px-4 py-3 text-sm font-bold text-white transition-all hover:bg-orange-hover min-h-[48px]"
           >
-            Buy Now — {product.priceLabel} →
+            Buy Now — {product.priceLabel}
           </Link>
         )}
       </div>

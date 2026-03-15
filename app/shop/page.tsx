@@ -1,7 +1,14 @@
 import { Metadata } from "next";
-import { Star } from "lucide-react";
+import { Star, Lock, Mail, Infinity, MessageCircle } from "lucide-react";
 import { products } from "@/lib/products";
 import { ProductCard } from "@/components/cards/product-card";
+
+const trustBadges = [
+  { icon: Lock, label: "Secure checkout via Razorpay" },
+  { icon: Mail, label: "Delivered in 2 minutes" },
+  { icon: Infinity, label: "Lifetime access" },
+  { icon: MessageCircle, label: "WhatsApp support" },
+];
 
 export const metadata: Metadata = {
   title: "Shop — ShopDesk Products | Professional Business Tools",
@@ -52,11 +59,13 @@ export default function ShopPage() {
         </div>
 
         {/* Trust badges */}
-        <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-mid-grey">
-          <span>🔒 Secure checkout via Razorpay</span>
-          <span>📧 Delivered in 2 minutes</span>
-          <span>🔄 Lifetime access</span>
-          <span>💬 WhatsApp support</span>
+        <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-3">
+          {trustBadges.map(({ icon: Icon, label }) => (
+            <span key={label} className="flex items-center gap-2 text-xs text-mid-grey">
+              <Icon size={13} className="text-teal" />
+              {label}
+            </span>
+          ))}
         </div>
       </div>
     </section>

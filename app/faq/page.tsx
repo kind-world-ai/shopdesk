@@ -151,7 +151,10 @@ export default function FAQPage() {
           </nav>
 
           {/* Header */}
-          <h1 className="mb-4 font-[var(--font-heading)] text-3xl font-extrabold text-navy md:text-4xl">
+          <p className="mb-3 text-sm font-semibold tracking-widest text-teal uppercase">
+            FAQ
+          </p>
+          <h1 className="mb-4 text-3xl font-extrabold text-navy md:text-4xl">
             Frequently Asked Questions
           </h1>
           <p className="mb-12 text-lg text-mid-grey max-w-2xl">
@@ -163,7 +166,7 @@ export default function FAQPage() {
           <div className="space-y-12">
             {sections.map((section) => (
               <div key={section.title}>
-                <h2 className="mb-6 font-[var(--font-heading)] text-xl font-bold text-navy md:text-2xl">
+                <h2 className="mb-6 text-xl font-bold text-navy md:text-2xl">
                   {section.title}
                 </h2>
 
@@ -171,9 +174,9 @@ export default function FAQPage() {
                   {section.faqs.map((faq) => (
                     <details
                       key={faq.q}
-                      className="group rounded-xl border border-navy/10 bg-white transition-shadow hover:shadow-sm"
+                      className="group rounded-2xl border border-gray-200 bg-white transition-shadow hover:shadow-sm"
                     >
-                      <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-medium text-navy md:px-6 md:py-5 min-h-[56px] [&::-webkit-details-marker]:hidden list-none">
+                      <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-medium text-navy transition-colors hover:bg-gray-50/50 md:px-6 md:py-5 min-h-[56px] [&::-webkit-details-marker]:hidden list-none">
                         <span className="text-[15px] leading-snug md:text-base">
                           {faq.q}
                         </span>

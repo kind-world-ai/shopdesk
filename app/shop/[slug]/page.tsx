@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Check, Star, Shield, Clock, RefreshCw } from "lucide-react";
+import { Check, CheckCircle2, XCircle, Star, Shield, Clock, RefreshCw, ArrowRight } from "lucide-react";
 import { products, getProductBySlug, getAllSlugs } from "@/lib/products";
 
 export function generateStaticParams() {
@@ -125,7 +125,7 @@ export default async function ProductDetailPage({
               </div>
 
               {/* What's Included */}
-              <div className="mb-8 rounded-2xl border border-navy/5 bg-white p-6">
+              <div className="mb-8 rounded-2xl border border-gray-200 bg-white p-6">
                 <h2 className="mb-4 text-lg font-bold text-navy">
                   What&apos;s Included
                 </h2>
@@ -157,7 +157,7 @@ export default async function ProductDetailPage({
               </div>
 
               {/* Testimonial */}
-              <div className="mb-8 rounded-2xl border border-navy/5 bg-white p-6">
+              <div className="mb-8 rounded-2xl border border-gray-200 bg-white p-6">
                 <div className="mb-3 flex">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star
@@ -179,7 +179,7 @@ export default async function ProductDetailPage({
               </div>
 
               {/* Comparison */}
-              <div className="rounded-2xl border border-navy/5 bg-white p-6">
+              <div className="rounded-2xl border border-gray-200 bg-white p-6">
                 <h2 className="mb-4 text-lg font-bold text-navy">
                   Why ShopDesk?
                 </h2>
@@ -204,33 +204,31 @@ export default async function ProductDetailPage({
                     <tbody className="text-navy/70">
                       <tr className="border-b border-navy/5">
                         <td className="py-2">Setup time</td>
-                        <td className="py-2 text-center font-bold text-teal">
-                          15 min
-                        </td>
+                        <td className="py-2 text-center font-bold text-teal">15 min</td>
                         <td className="py-2 text-center">Days</td>
                         <td className="py-2 text-center">Weeks</td>
                       </tr>
                       <tr className="border-b border-navy/5">
                         <td className="py-2">Cost</td>
-                        <td className="py-2 text-center font-bold text-teal">
-                          {product.priceLabel} once
-                        </td>
+                        <td className="py-2 text-center font-bold text-teal">{product.priceLabel} once</td>
                         <td className="py-2 text-center">Free</td>
                         <td className="py-2 text-center">₹10K+/yr</td>
                       </tr>
                       <tr className="border-b border-navy/5">
                         <td className="py-2">Automation</td>
-                        <td className="py-2 text-center font-bold text-teal">
-                          ✓
+                        <td className="py-2 text-center">
+                          <CheckCircle2 size={16} className="mx-auto text-teal" />
                         </td>
-                        <td className="py-2 text-center text-alert">✗</td>
-                        <td className="py-2 text-center">✓</td>
+                        <td className="py-2 text-center">
+                          <XCircle size={16} className="mx-auto text-red-400" />
+                        </td>
+                        <td className="py-2 text-center">
+                          <CheckCircle2 size={16} className="mx-auto text-teal" />
+                        </td>
                       </tr>
                       <tr>
                         <td className="py-2">Learning curve</td>
-                        <td className="py-2 text-center font-bold text-teal">
-                          None
-                        </td>
+                        <td className="py-2 text-center font-bold text-teal">None</td>
                         <td className="py-2 text-center">None</td>
                         <td className="py-2 text-center">Steep</td>
                       </tr>
@@ -242,7 +240,7 @@ export default async function ProductDetailPage({
 
             {/* Sticky sidebar — right col (desktop) */}
             <div className="hidden md:block">
-              <div className="sticky top-20 rounded-2xl border border-navy/5 bg-white p-6 shadow-sm">
+              <div className="sticky top-20 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
                 <div
                   className={`mb-3 flex h-12 w-12 items-center justify-center rounded-lg ${
                     product.badge ? "bg-orange/10" : "bg-navy/5"
@@ -275,16 +273,18 @@ export default async function ProductDetailPage({
                 {isFree ? (
                   <Link
                     href={`/shop/${product.slug}`}
-                    className="mb-3 flex w-full items-center justify-center rounded-full bg-navy px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-navy/90 min-h-[48px]"
+                    className="mb-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-navy px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-navy/90 min-h-[48px]"
                   >
-                    Download Free →
+                    Download Free
+                    <ArrowRight size={14} />
                   </Link>
                 ) : (
                   <Link
                     href={`/checkout/${product.slug}`}
-                    className="mb-3 flex w-full items-center justify-center rounded-full bg-orange px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-hover min-h-[48px]"
+                    className="btn-glow mb-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-orange px-4 py-3 text-sm font-bold text-white transition-all hover:bg-orange-hover min-h-[48px]"
                   >
-                    Buy Now — {product.priceLabel} →
+                    Buy Now — {product.priceLabel}
+                    <ArrowRight size={14} />
                   </Link>
                 )}
 
@@ -317,7 +317,7 @@ export default async function ProductDetailPage({
                   <Link
                     key={p.slug}
                     href={`/shop/${p.slug}`}
-                    className="rounded-2xl border border-navy/5 bg-white p-5 transition-all hover:-translate-y-1 hover:shadow-md"
+                    className="rounded-2xl border border-gray-200 bg-white p-5 transition-all hover:-translate-y-1 hover:shadow-md"
                   >
                     <h3 className="mb-1 font-bold text-navy">{p.name}</h3>
                     <p className="mb-2 text-xs text-mid-grey">{p.shortDesc}</p>
@@ -334,12 +334,13 @@ export default async function ProductDetailPage({
 
       {/* Mobile sticky CTA */}
       {!isFree && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-navy/10 bg-white/95 px-4 py-3 backdrop-blur-md md:hidden">
+        <div className="fixed bottom-4 left-4 right-4 z-50 rounded-2xl border border-gray-200 bg-white/95 px-4 py-3 shadow-xl backdrop-blur-md md:hidden">
           <Link
             href={`/checkout/${product.slug}`}
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-orange py-3.5 text-sm font-bold text-white min-h-[48px]"
+            className="btn-glow flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-orange py-3.5 text-sm font-bold text-white transition-all hover:bg-orange-hover min-h-[48px]"
           >
-            Buy {product.name} — {product.priceLabel} →
+            Buy {product.name} — {product.priceLabel}
+            <ArrowRight size={14} />
           </Link>
         </div>
       )}

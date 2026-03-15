@@ -4,7 +4,7 @@ import { PricingSection } from "@/components/sections/pricing";
 import { FAQSection } from "@/components/sections/faq";
 import { FinalCTASection } from "@/components/sections/final-cta";
 import { ComparisonSection } from "@/components/sections/comparison";
-import { Star, CheckCircle2 } from "lucide-react";
+import { Star, CheckCircle2, HardHat, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "ShopDesk Construction CRM — RA Bill & Project Tracking | ₹999",
@@ -90,10 +90,11 @@ export default function ConstructionPage() {
       <section className="bg-cream px-4 pt-20 pb-12 md:px-8 md:pt-28 md:pb-20">
         <div className="mx-auto max-w-5xl">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-teal/10 px-4 py-1.5 text-xs font-semibold text-teal">
-            🏗️ For Contractors & Builders
+            <HardHat size={13} />
+            For Contractors & Builders
           </div>
 
-          <h1 className="mb-4 font-[var(--font-heading)] text-[2rem] leading-[1.15] font-extrabold text-navy md:text-[3rem]">
+          <h1 className="mb-4 text-[2rem] leading-[1.15] font-extrabold text-navy md:text-[3rem]">
             RA Bill & Project Tracking
             <br />
             Done Right.{" "}
@@ -108,14 +109,15 @@ export default function ConstructionPage() {
 
           <a
             href="#pricing"
-            className="inline-flex rounded-full bg-orange px-8 py-3.5 text-base font-bold text-white hover:bg-orange-hover"
+            className="btn-glow inline-flex cursor-pointer items-center gap-2 rounded-full bg-orange px-8 py-3.5 text-base font-bold text-white transition-all hover:bg-orange-hover"
           >
-            Download Construction CRM — ₹999 →
+            Download Construction CRM — ₹999
+            <ArrowRight size={16} />
           </a>
 
-          <div className="mt-4 flex items-center gap-4 text-sm text-mid-grey">
+          <div className="mt-5 flex items-center gap-4 text-sm text-mid-grey">
             <span className="flex items-center gap-1">
-              <Star size={14} className="fill-gold text-gold" /> 4.8/5
+              <Star size={13} className="fill-gold text-gold" /> 4.8/5
             </span>
             <span>373 formulas</span>
             <span>No subscription</span>
@@ -126,13 +128,16 @@ export default function ConstructionPage() {
       {/* Features */}
       <section className="bg-white px-4 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-5xl">
-          <h2 className="mb-8 text-center font-[var(--font-heading)] text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
+          <p className="mb-3 text-center text-sm font-semibold tracking-widest text-teal uppercase">
+            Features
+          </p>
+          <h2 className="mb-8 text-center text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
             What Does ShopDesk Construction CRM Track?
           </h2>
 
           <div className="grid gap-4 sm:grid-cols-2">
             {features.map((f) => (
-              <div key={f.title} className="rounded-xl border border-navy/5 bg-cream p-5">
+              <div key={f.title} className="card-hover rounded-2xl border border-gray-200 bg-white p-5">
                 <h3 className="mb-2 flex items-start gap-2 text-base font-bold text-navy">
                   <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-teal" />
                   {f.title}
@@ -147,12 +152,15 @@ export default function ConstructionPage() {
       {/* Definitions — AEO */}
       <section className="bg-cream px-4 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-6 font-[var(--font-heading)] text-[1.5rem] font-extrabold text-navy md:text-[2rem]">
+          <p className="mb-3 text-sm font-semibold tracking-widest text-teal uppercase">
+            Glossary
+          </p>
+          <h2 className="mb-6 text-[1.5rem] font-extrabold text-navy md:text-[2rem]">
             Key Construction Terms Explained
           </h2>
-          <dl className="space-y-4">
+          <dl className="space-y-3">
             {definitions.map((d) => (
-              <div key={d.term} className="rounded-xl border border-navy/5 bg-white p-4">
+              <div key={d.term} className="rounded-2xl border border-gray-200 bg-white p-5">
                 <dt className="mb-1 text-sm font-bold text-navy">{d.term}</dt>
                 <dd className="text-sm text-mid-grey">{d.def}</dd>
               </div>

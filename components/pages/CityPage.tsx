@@ -36,23 +36,13 @@ function localBusinessSchema(city: CityData) {
       containedInPlace: {
         "@type": "State",
         name: city.state,
-        containedInPlace: {
-          "@type": "Country",
-          name: "India",
-        },
+        containedInPlace: { "@type": "Country", name: "India" },
       },
     },
     priceRange: "₹999",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ],
+      dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
       opens: "09:00",
       closes: "18:00",
     },
@@ -72,37 +62,35 @@ export function CityPage({ city }: { city: CityData }) {
         ])}
       />
 
-      <main className="bg-[var(--color-cream)] min-h-screen">
+      <main className="min-h-screen bg-cream">
         {/* Hero */}
-        <section className="bg-[var(--color-navy)] text-white py-16 md:py-24">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-2 text-sm text-[var(--color-orange)] mb-4">
-              <MapPin className="w-4 h-4" />
-              <span>
-                {city.name}, {city.state}, India
-              </span>
+        <section className="bg-navy px-4 py-16 text-white md:py-24">
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-4 flex items-center gap-2 text-sm text-orange">
+              <MapPin size={15} />
+              <span>{city.name}, {city.state}, India</span>
             </div>
 
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 font-[family-name:var(--font-heading)]">
+            <h1 className="mb-6 text-3xl font-extrabold leading-tight md:text-5xl">
               Professional Business Tools for {city.name} Businesses.{" "}
-              <span className="text-[var(--color-orange)]">₹999.</span>
+              <span className="text-orange">₹999.</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-8 leading-relaxed">
+            <p className="mb-8 max-w-3xl text-lg leading-relaxed text-white/60 md:text-xl">
               {city.opening}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/checkout/salon-crm"
-                className="inline-flex items-center justify-center gap-2 bg-[var(--color-orange)] hover:bg-[var(--color-orange-hover)] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors min-h-[48px]"
+                className="btn-glow inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-orange px-7 py-3.5 text-base font-bold text-white transition-all hover:bg-orange-hover min-h-[48px]"
               >
                 Get Salon CRM — ₹999
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight size={16} />
               </Link>
               <Link
                 href="/checkout/construction-crm"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors min-h-[48px]"
+                className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-base font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/8 min-h-[48px]"
               >
                 Get Construction CRM — ₹999
               </Link>
@@ -111,17 +99,15 @@ export function CityPage({ city }: { city: CityData }) {
         </section>
 
         {/* Social Proof Stats */}
-        <section className="bg-white border-b border-gray-200">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <section className="border-b border-gray-200 bg-white">
+          <div className="mx-auto max-w-5xl px-4 py-8">
+            <div className="grid grid-cols-2 gap-6 text-center md:grid-cols-4">
               {city.socialProof.map((item) => (
                 <div key={item.label}>
-                  <div className="text-2xl md:text-3xl font-bold text-[var(--color-navy)] font-[family-name:var(--font-heading)]">
+                  <div className="text-2xl font-extrabold text-navy md:text-3xl">
                     {item.stat}
                   </div>
-                  <div className="text-sm text-[var(--color-mid-grey)] mt-1">
-                    {item.label}
-                  </div>
+                  <div className="mt-1 text-sm text-mid-grey">{item.label}</div>
                 </div>
               ))}
             </div>
@@ -129,122 +115,120 @@ export function CityPage({ city }: { city: CityData }) {
         </section>
 
         {/* For Salons */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-[var(--color-orange)]/10 p-3 rounded-xl">
-                <Scissors className="w-6 h-6 text-[var(--color-orange)]" />
+        <section className="px-4 py-16 md:py-20">
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-4 flex items-center gap-3">
+              <div className="rounded-xl bg-orange/10 p-3">
+                <Scissors size={22} className="text-orange" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-navy)] font-[family-name:var(--font-heading)]">
+              <h2 className="text-2xl font-bold text-navy md:text-3xl">
                 For {city.name} Salons
               </h2>
             </div>
-            <p className="text-[var(--color-mid-grey)] mb-8 max-w-2xl">
+            <p className="mb-8 max-w-2xl text-mid-grey">
               Whether you run a premium salon in {city.salonLocations} — ShopDesk
-              replaces your register, calculator, and Excel with one professional
-              system.
+              replaces your register, calculator, and Excel with one professional system.
             </p>
 
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 mb-8">
-              <ul className="space-y-4">
+            <div className="mb-6 rounded-2xl border border-gray-200 bg-white p-6 md:p-8">
+              <ul className="space-y-3">
                 {city.salonFeatures.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-[var(--color-teal)] mt-0.5 shrink-0" />
-                    <span className="text-[var(--color-navy)]">{feature}</span>
+                    <Check size={18} className="mt-0.5 shrink-0 text-teal" />
+                    <span className="text-navy">{feature}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link
                 href="/checkout/salon-crm"
-                className="inline-flex items-center gap-2 bg-[var(--color-orange)] hover:bg-[var(--color-orange-hover)] text-white font-semibold px-6 py-3 rounded-lg transition-colors min-h-[48px]"
+                className="btn-glow inline-flex cursor-pointer items-center gap-2 rounded-full bg-orange px-6 py-3 text-sm font-bold text-white transition-all hover:bg-orange-hover min-h-[48px]"
               >
                 Get Salon CRM — ₹999
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight size={15} />
               </Link>
               <Link
                 href="/shop/salon-crm"
-                className="text-[var(--color-orange)] hover:underline font-medium min-h-[48px] flex items-center"
+                className="cursor-pointer text-sm font-medium text-orange underline underline-offset-4 transition-colors hover:text-orange-hover min-h-[48px] flex items-center"
               >
-                See all features →
+                See all features
               </Link>
             </div>
           </div>
         </section>
 
         {/* For Contractors */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-[var(--color-teal)]/10 p-3 rounded-xl">
-                <HardHat className="w-6 h-6 text-[var(--color-teal)]" />
+        <section className="bg-white px-4 py-16 md:py-20">
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-4 flex items-center gap-3">
+              <div className="rounded-xl bg-teal/10 p-3">
+                <HardHat size={22} className="text-teal" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-navy)] font-[family-name:var(--font-heading)]">
+              <h2 className="text-2xl font-bold text-navy md:text-3xl">
                 For {city.name} Contractors
               </h2>
             </div>
-            <p className="text-[var(--color-mid-grey)] mb-8 max-w-2xl">
+            <p className="mb-8 max-w-2xl text-mid-grey">
               Managing projects in {city.contractorLocations}? ShopDesk handles RA
               Bills, BOQ tracking, material reconciliation, and payment follow-ups
               — so you focus on building.
             </p>
 
-            <div className="bg-[var(--color-cream)] rounded-2xl border border-gray-200 p-6 md:p-8 mb-8">
-              <ul className="space-y-4">
+            <div className="mb-6 rounded-2xl border border-gray-200 bg-cream p-6 md:p-8">
+              <ul className="space-y-3">
                 {city.contractorFeatures.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-[var(--color-teal)] mt-0.5 shrink-0" />
-                    <span className="text-[var(--color-navy)]">{feature}</span>
+                    <Check size={18} className="mt-0.5 shrink-0 text-teal" />
+                    <span className="text-navy">{feature}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link
                 href="/checkout/construction-crm"
-                className="inline-flex items-center gap-2 bg-[var(--color-teal)] hover:opacity-90 text-white font-semibold px-6 py-3 rounded-lg transition-opacity min-h-[48px]"
+                className="btn-glow inline-flex cursor-pointer items-center gap-2 rounded-full bg-teal px-6 py-3 text-sm font-bold text-white transition-all hover:opacity-90 min-h-[48px]"
               >
                 Get Construction CRM — ₹999
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight size={15} />
               </Link>
               <Link
                 href="/shop/construction-crm"
-                className="text-[var(--color-teal)] hover:underline font-medium min-h-[48px] flex items-center"
+                className="cursor-pointer text-sm font-medium text-teal underline underline-offset-4 transition-colors hover:opacity-80 min-h-[48px] flex items-center"
               >
-                See all features →
+                See all features
               </Link>
             </div>
           </div>
         </section>
 
         {/* Why Choose ShopDesk */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-navy)] mb-10 font-[family-name:var(--font-heading)]">
+        <section className="px-4 py-16 md:py-20">
+          <div className="mx-auto max-w-5xl">
+            <p className="mb-3 text-sm font-semibold tracking-widest text-teal uppercase">
+              Why ShopDesk
+            </p>
+            <h2 className="mb-10 text-2xl font-bold text-navy md:text-3xl">
               Why {city.name} Businesses Choose ShopDesk
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid gap-4 md:grid-cols-2">
               {city.whyChoose.map((item, i) => {
                 const icons = [Shield, Zap, Users, Star];
                 const Icon = icons[i % icons.length];
                 return (
                   <div
                     key={item.title}
-                    className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow"
+                    className="card-hover rounded-2xl border border-gray-200 bg-white p-6"
                   >
-                    <div className="flex items-center gap-3 mb-3">
-                      <Icon className="w-5 h-5 text-[var(--color-orange)]" />
-                      <h3 className="font-semibold text-[var(--color-navy)] text-lg">
-                        {item.title}
-                      </h3>
+                    <div className="mb-3 flex items-center gap-3">
+                      <Icon size={18} className="text-orange" />
+                      <h3 className="text-base font-semibold text-navy">{item.title}</h3>
                     </div>
-                    <p className="text-[var(--color-mid-grey)] leading-relaxed">
-                      {item.description}
-                    </p>
+                    <p className="text-sm leading-relaxed text-mid-grey">{item.description}</p>
                   </div>
                 );
               })}
@@ -253,17 +237,20 @@ export function CityPage({ city }: { city: CityData }) {
         </section>
 
         {/* What You Get */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-navy)] mb-6 font-[family-name:var(--font-heading)]">
+        <section className="bg-white px-4 py-16 md:py-20">
+          <div className="mx-auto max-w-5xl">
+            <p className="mb-3 text-sm font-semibold tracking-widest text-teal uppercase">
+              What&apos;s Included
+            </p>
+            <h2 className="mb-3 text-2xl font-bold text-navy md:text-3xl">
               What&apos;s Inside ShopDesk
             </h2>
-            <p className="text-[var(--color-mid-grey)] mb-10 max-w-2xl">
+            <p className="mb-10 max-w-2xl text-mid-grey">
               Both Salon CRM and Construction CRM are Google Sheets-based systems
               with professionally built formulas, dashboards, and workflows.
             </p>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 { label: "11 interconnected sheets", sub: "Per product" },
                 { label: "373+ validated formulas", sub: "IFERROR protected" },
@@ -274,14 +261,10 @@ export function CityPage({ city }: { city: CityData }) {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="bg-[var(--color-cream)] rounded-lg p-4 border border-gray-100"
+                  className="rounded-2xl border border-gray-200 bg-cream p-4"
                 >
-                  <div className="font-semibold text-[var(--color-navy)]">
-                    {item.label}
-                  </div>
-                  <div className="text-sm text-[var(--color-mid-grey)]">
-                    {item.sub}
-                  </div>
+                  <div className="font-semibold text-navy">{item.label}</div>
+                  <div className="text-sm text-mid-grey">{item.sub}</div>
                 </div>
               ))}
             </div>
@@ -289,38 +272,38 @@ export function CityPage({ city }: { city: CityData }) {
         </section>
 
         {/* Final CTA */}
-        <section className="bg-[var(--color-navy)] py-16 md:py-20">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 font-[family-name:var(--font-heading)]">
+        <section className="bg-navy px-4 py-16 md:py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">
               Ready to upgrade your {city.name} business?
             </h2>
-            <p className="text-gray-300 mb-8 text-lg">
+            <p className="mb-8 text-lg text-white/50">
               Join {city.socialProof[0].stat} businesses in {city.name} already
               using ShopDesk. ₹999 one-time. Set up in 15 minutes.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
               <Link
                 href="/checkout/salon-crm"
-                className="inline-flex items-center justify-center gap-2 bg-[var(--color-orange)] hover:bg-[var(--color-orange-hover)] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors min-h-[48px]"
+                className="btn-glow inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-orange px-7 py-3.5 text-base font-bold text-white transition-all hover:bg-orange-hover min-h-[48px]"
               >
                 Salon CRM — ₹999
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight size={16} />
               </Link>
               <Link
                 href="/checkout/construction-crm"
-                className="inline-flex items-center justify-center gap-2 bg-[var(--color-teal)] hover:opacity-90 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-opacity min-h-[48px]"
+                className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-teal px-7 py-3.5 text-base font-bold text-white transition-all hover:opacity-90 min-h-[48px]"
               >
                 Construction CRM — ₹999
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight size={16} />
               </Link>
             </div>
 
-            <p className="text-gray-400 text-sm mt-6">
+            <p className="mt-6 text-sm text-white/30">
               Also available in{" "}
               <Link
                 href={`/cities/${city.nearbyCity.slug}`}
-                className="text-[var(--color-orange)] hover:underline"
+                className="text-orange hover:underline"
               >
                 {city.nearbyCity.name}
               </Link>
