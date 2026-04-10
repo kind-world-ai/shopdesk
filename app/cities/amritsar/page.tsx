@@ -6,7 +6,7 @@ import { CityPage } from "@/components/pages/CityPage";
 const city = getCityBySlug("amritsar")!;
 
 export const metadata: Metadata = genMeta({
-  title: "ShopDesk Amritsar — Business Software for Salons & Contractors | ₹999",
+  title: "AgenticVani Amritsar — Business Software for Salons & Contractors | ₹999",
   description:
     "Professional business management tools for Amritsar businesses. Salon CRM, construction billing. ₹999 one-time. Trusted by 20+ Amritsar businesses.",
   path: "/cities/amritsar",
@@ -17,7 +17,7 @@ export const metadata: Metadata = genMeta({
     "construction billing software amritsar",
     "ra bill software amritsar",
     "beauty parlour software amritsar",
-    "shopdesk amritsar",
+    "agenticvani amritsar",
   ],
 });
 

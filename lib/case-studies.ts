@@ -49,7 +49,7 @@ function parseFrontmatter(slug: string): CaseStudyWithContent | null {
     category: data.category || "Salon",
     readTime: data.readTime || "5 min",
     primaryKeyword: data.primaryKeyword || "",
-    author: data.author || "ShopDesk Team",
+    author: data.author || "AgenticVani Team",
     clientName: data.clientName || "",
     businessName: data.businessName || "",
     location: data.location || "",

@@ -26,7 +26,7 @@ function parseFrontmatter(slug: string): BlogPostWithContent | null {
     category: data.category || "Business Tips",
     tags: data.tags || [],
     readTime: data.readTime || "5 min read",
-    author: data.author || "ShopDesk Team",
+    author: data.author || "AgenticVani Team",
     seoTitle: data.seoTitle || data.title || "",
     seoDescription: data.seoDescription || data.description || "",
     primaryKeyword: data.primaryKeyword || "",

@@ -1,4 +1,4 @@
-# ShopDesk
+# AgenticVani
 
 Professional business management tools for Indian SMBs — salons, construction firms, and shops.
 
@@ -25,9 +25,9 @@ Professional business management tools for Indian SMBs — salons, construction 
 
 ### Product Slugs
 
-- `salon-crm` — ShopDesk CRM (₹999)
-- `construction-crm` — ShopDesk Lite (Free)
-- `shopdesk-pro` — ShopDesk Pro (₹2,999)
+- `salon-crm` — AgenticVani CRM (₹999)
+- `construction-crm` — AgenticVani Lite (Free)
+- `agenticvani-pro` — AgenticVani Pro (₹2,999)
 - `custom-setup` — Custom Setup (₹9,999)
 
 ## Getting Started

@@ -8,70 +8,70 @@ const rows = [
     paper: { text: "₹0", status: "neutral" },
     excel: { text: "₹0", status: "neutral" },
     erp: { text: "₹5k–15k/mo", status: "bad" },
-    shopdesk: { text: "₹999 one-time", status: "good" },
+    agenticvani: { text: "₹999 one-time", status: "good" },
   },
   {
     feature: "RA Bill Auto-Calculation",
     paper: { text: "Manual", status: "bad" },
     excel: { text: "Manual", status: "bad" },
     erp: { text: "Yes", status: "good" },
-    shopdesk: { text: "Yes", status: "good" },
+    agenticvani: { text: "Yes", status: "good" },
   },
   {
     feature: "GST + TDS + Retention",
     paper: { text: "Manual", status: "bad" },
     excel: { text: "Manual", status: "bad" },
     erp: { text: "Yes", status: "good" },
-    shopdesk: { text: "Yes", status: "good" },
+    agenticvani: { text: "Yes", status: "good" },
   },
   {
     feature: "Works on Mobile Phone",
     paper: { text: "Paper only", status: "neutral" },
     excel: { text: "Limited", status: "bad" },
     erp: { text: "App only", status: "neutral" },
-    shopdesk: { text: "Google Sheets", status: "good" },
+    agenticvani: { text: "Google Sheets", status: "good" },
   },
   {
     feature: "No IT Setup Required",
     paper: { text: "Yes", status: "good" },
     excel: { text: "Yes", status: "good" },
     erp: { text: "No", status: "bad" },
-    shopdesk: { text: "Yes", status: "good" },
+    agenticvani: { text: "Yes", status: "good" },
   },
   {
     feature: "EVM Dashboard",
     paper: { text: "No", status: "bad" },
     excel: { text: "No", status: "bad" },
     erp: { text: "Some plans", status: "neutral" },
-    shopdesk: { text: "Included", status: "good" },
+    agenticvani: { text: "Included", status: "good" },
   },
   {
     feature: "Payment Aging Tracker",
     paper: { text: "No", status: "bad" },
     excel: { text: "No", status: "bad" },
     erp: { text: "Yes", status: "good" },
-    shopdesk: { text: "Included", status: "good" },
+    agenticvani: { text: "Included", status: "good" },
   },
   {
     feature: "Data Ownership",
     paper: { text: "Paper", status: "neutral" },
     excel: { text: "Your PC", status: "neutral" },
     erp: { text: "Their servers", status: "bad" },
-    shopdesk: { text: "Your Drive", status: "good" },
+    agenticvani: { text: "Your Drive", status: "good" },
   },
   {
     feature: "Setup Time",
     paper: { text: "0 min", status: "neutral" },
     excel: { text: "Days", status: "bad" },
     erp: { text: "5–30 days", status: "bad" },
-    shopdesk: { text: "15 minutes", status: "good" },
+    agenticvani: { text: "15 minutes", status: "good" },
   },
   {
     feature: "Monthly Subscription",
     paper: { text: "None", status: "good" },
     excel: { text: "None", status: "good" },
     erp: { text: "₹5k–15k", status: "bad" },
-    shopdesk: { text: "₹0 forever", status: "good" },
+    agenticvani: { text: "₹0 forever", status: "good" },
   },
 ];
 
@@ -91,11 +91,11 @@ export function ComparisonSection() {
           Comparison
         </p>
         <h2 className="mb-3 text-center text-[1.75rem] font-extrabold text-white md:text-[2.5rem]">
-          Why 500+ Businesses Chose ShopDesk
+          Why 500+ Businesses Chose AgenticVani
           <br className="hidden md:block" /> Over ₹5,000/Month Software
         </h2>
         <p className="mb-10 text-center text-sm text-white/40">
-          ShopDesk wins 8 out of 10 categories — at 1/150th the cost of ERP.
+          AgenticVani wins 8 out of 10 categories — at 1/150th the cost of ERP.
         </p>
 
         {/* Table */}
@@ -116,7 +116,7 @@ export function ComparisonSection() {
                   ERP
                 </th>
                 <th className="bg-orange/10 px-4 py-3.5 text-xs font-bold tracking-wider text-orange uppercase">
-                  ShopDesk ₹999
+                  AgenticVani ₹999
                 </th>
               </tr>
             </thead>
@@ -142,8 +142,8 @@ export function ComparisonSection() {
                   </td>
                   <td className="bg-orange/5 px-4 py-3.5">
                     <div className="flex items-center gap-2 font-semibold text-[#14B8A6]">
-                      <StatusIcon status={row.shopdesk.status} />
-                      {row.shopdesk.text}
+                      <StatusIcon status={row.agenticvani.status} />
+                      {row.agenticvani.text}
                     </div>
                   </td>
                 </tr>

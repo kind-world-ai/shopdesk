@@ -83,7 +83,7 @@ export default function CheckoutPage({
     try {
       await openRazorpayCheckout({
         amount: product.price * 100, // paise
-        name: "ShopDesk",
+        name: "AgenticVani",
         description: product.name,
         prefill: {
           name: data.name,

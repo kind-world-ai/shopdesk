@@ -4,7 +4,7 @@ import { getAllCitySlugs } from "@/lib/cities";
 import { getAllCaseStudySlugs } from "@/lib/case-studies";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://theshopdesk.in";
+  const baseUrl = "https://agenticvani.com";
 
   const productPages = getAllSlugs().flatMap((slug) => [
     {

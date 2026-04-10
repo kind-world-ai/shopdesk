@@ -18,11 +18,11 @@ function localBusinessSchema(city: CityData) {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "ShopDesk",
+    name: "AgenticVani",
     description: `Professional business management tools for ${city.name} salons and contractors. Google Sheets-based CRM — ₹999 one-time.`,
-    url: `https://theshopdesk.in/cities/${city.slug}`,
+    url: `https://agenticvani.com/cities/${city.slug}`,
     telephone: "+91-7009-XXX-XXX",
-    email: "hello@shopdesk.in",
+    email: "hello@agenticvani.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Mohali",
@@ -126,7 +126,7 @@ export function CityPage({ city }: { city: CityData }) {
               </h2>
             </div>
             <p className="mb-8 max-w-2xl text-mid-grey">
-              Whether you run a premium salon in {city.salonLocations} — ShopDesk
+              Whether you run a premium salon in {city.salonLocations} — AgenticVani
               replaces your register, calculator, and Excel with one professional system.
             </p>
 
@@ -171,7 +171,7 @@ export function CityPage({ city }: { city: CityData }) {
               </h2>
             </div>
             <p className="mb-8 max-w-2xl text-mid-grey">
-              Managing projects in {city.contractorLocations}? ShopDesk handles RA
+              Managing projects in {city.contractorLocations}? AgenticVani handles RA
               Bills, BOQ tracking, material reconciliation, and payment follow-ups
               — so you focus on building.
             </p>
@@ -205,14 +205,14 @@ export function CityPage({ city }: { city: CityData }) {
           </div>
         </section>
 
-        {/* Why Choose ShopDesk */}
+        {/* Why Choose AgenticVani */}
         <section className="px-4 py-16 md:py-20">
           <div className="mx-auto max-w-5xl">
             <p className="mb-3 text-sm font-semibold tracking-widest text-teal uppercase">
-              Why ShopDesk
+              Why AgenticVani
             </p>
             <h2 className="mb-10 text-2xl font-bold text-navy md:text-3xl">
-              Why {city.name} Businesses Choose ShopDesk
+              Why {city.name} Businesses Choose AgenticVani
             </h2>
 
             <div className="grid gap-4 md:grid-cols-2">
@@ -243,7 +243,7 @@ export function CityPage({ city }: { city: CityData }) {
               What&apos;s Included
             </p>
             <h2 className="mb-3 text-2xl font-bold text-navy md:text-3xl">
-              What&apos;s Inside ShopDesk
+              What&apos;s Inside AgenticVani
             </h2>
             <p className="mb-10 max-w-2xl text-mid-grey">
               Both Salon CRM and Construction CRM are Google Sheets-based systems
@@ -279,7 +279,7 @@ export function CityPage({ city }: { city: CityData }) {
             </h2>
             <p className="mb-8 text-lg text-white/50">
               Join {city.socialProof[0].stat} businesses in {city.name} already
-              using ShopDesk. ₹999 one-time. Set up in 15 minutes.
+              using AgenticVani. ₹999 one-time. Set up in 15 minutes.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">

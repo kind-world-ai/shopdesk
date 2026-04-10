@@ -81,7 +81,7 @@ export function Hero() {
               <div className="mb-4 flex items-center justify-between">
                 <div>
                   <p className="text-xs font-semibold text-white/40 uppercase tracking-wider">
-                    ShopDesk Dashboard
+                    AgenticVani Dashboard
                   </p>
                   <p className="text-lg font-bold text-white">
                     This Month

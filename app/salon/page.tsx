@@ -17,15 +17,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "ShopDesk Salon CRM — Complete Salon Management in Google Sheets | ₹999",
+  title: "AgenticVani Salon CRM — Complete Salon Management in Google Sheets | ₹999",
   description:
     "Professional salon management system for Indian salons. Track appointments, billing, staff commissions, inventory, and monthly revenue. 11 sheets, 250+ formulas. One-time ₹999. Used by salons in Chandigarh, Mohali, Panchkula.",
   openGraph: {
-    title: "ShopDesk Salon CRM — Manage Your Salon Like a Pro",
+    title: "AgenticVani Salon CRM — Manage Your Salon Like a Pro",
     description: "Complete salon CRM in Google Sheets. ₹999 one-time. No subscription.",
     locale: "en_IN",
   },
-  alternates: { canonical: "https://theshopdesk.in/salon" },
+  alternates: { canonical: "https://agenticvani.com/salon" },
 };
 
 const features = [
@@ -41,7 +41,7 @@ export default function SalonPage() {
   return (
     <>
       <ProductSchema
-        name="ShopDesk Salon CRM"
+        name="AgenticVani Salon CRM"
         description="Complete salon management system in Google Sheets. Track appointments, billing, staff, inventory, and monthly revenue. 11 sheets, 250+ formulas. One-time purchase."
         price="999"
       />
@@ -91,7 +91,7 @@ export default function SalonPage() {
             Features
           </p>
           <h2 className="mb-8 text-center text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
-            What Does ShopDesk Salon CRM Track?
+            What Does AgenticVani Salon CRM Track?
           </h2>
 
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
@@ -108,14 +108,14 @@ export default function SalonPage() {
         </div>
       </section>
 
-      {/* Why ShopDesk */}
+      {/* Why AgenticVani */}
       <section className="bg-cream px-4 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-3xl">
           <p className="mb-3 text-sm font-semibold tracking-widest text-teal uppercase">
-            Why ShopDesk
+            Why AgenticVani
           </p>
           <h2 className="mb-6 text-[1.5rem] font-extrabold text-navy md:text-[2rem]">
-            Why Do Salon Owners in Chandigarh Choose ShopDesk?
+            Why Do Salon Owners in Chandigarh Choose AgenticVani?
           </h2>
           <div className="space-y-3">
             {[

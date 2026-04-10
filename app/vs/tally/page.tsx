@@ -8,13 +8,13 @@ import { CTABox } from "@/components/ui/CTABox";
 
 export const metadata: Metadata = genMeta({
   title:
-    "ShopDesk vs Tally Prime — Which is Better for Contractors & Small Business?",
+    "AgenticVani vs Tally Prime — Which is Better for Contractors & Small Business?",
   description:
-    "Tally is great for accounting. ShopDesk is built for project billing, RA Bills, and salon management. See the honest comparison for Indian businesses. ₹999 vs ₹18,000.",
+    "Tally is great for accounting. AgenticVani is built for project billing, RA Bills, and salon management. See the honest comparison for Indian businesses. ₹999 vs ₹18,000.",
   path: "/vs/tally",
   keywords: [
     "tally alternative construction billing india",
-    "shopdesk vs tally",
+    "agenticvani vs tally",
     "tally prime vs google sheets",
     "ra bill tracking tally",
     "construction billing software india",
@@ -25,97 +25,97 @@ export const metadata: Metadata = genMeta({
 const comparisonRows: {
   feature: string;
   tally: string;
-  shopdesk: string;
-  winner: "tally" | "shopdesk" | "both";
+  agenticvani: string;
+  winner: "tally" | "agenticvani" | "both";
 }[] = [
   {
     feature: "Price",
     tally: "₹18,000–54,000 one-time",
-    shopdesk: "₹999 one-time",
-    winner: "shopdesk",
+    agenticvani: "₹999 one-time",
+    winner: "agenticvani",
   },
   {
     feature: "RA Bill tracking",
     tally: "Not designed for this",
-    shopdesk: "Purpose-built",
-    winner: "shopdesk",
+    agenticvani: "Purpose-built",
+    winner: "agenticvani",
   },
   {
     feature: "BOQ / Project tracking",
     tally: "Not available",
-    shopdesk: "Full BOQ master",
-    winner: "shopdesk",
+    agenticvani: "Full BOQ master",
+    winner: "agenticvani",
   },
   {
     feature: "Material reconciliation",
     tally: "Not available",
-    shopdesk: "Built-in with alerts",
-    winner: "shopdesk",
+    agenticvani: "Built-in with alerts",
+    winner: "agenticvani",
   },
   {
     feature: "Appointment booking (salon)",
     tally: "Not available",
-    shopdesk: "Full appointment tracker",
-    winner: "shopdesk",
+    agenticvani: "Full appointment tracker",
+    winner: "agenticvani",
   },
   {
     feature: "EVM (CPI, SPI, EAC)",
     tally: "Not available",
-    shopdesk: "Dashboard ready",
-    winner: "shopdesk",
+    agenticvani: "Dashboard ready",
+    winner: "agenticvani",
   },
   {
     feature: "GST returns & filing",
     tally: "Full GST compliance",
-    shopdesk: "Not available",
+    agenticvani: "Not available",
     winner: "tally",
   },
   {
     feature: "Balance sheet & P&L",
     tally: "Full accounting suite",
-    shopdesk: "Not available",
+    agenticvani: "Not available",
     winner: "tally",
   },
   {
     feature: "Learning curve",
     tally: "High (needs accountant)",
-    shopdesk: "Low (15 min setup)",
-    winner: "shopdesk",
+    agenticvani: "Low (15 min setup)",
+    winner: "agenticvani",
   },
   {
     feature: "Works on phone",
     tally: "App available",
-    shopdesk: "Google Sheets free app",
+    agenticvani: "Google Sheets free app",
     winner: "both",
   },
   {
     feature: "Best for",
     tally: "GST returns, accounting",
-    shopdesk: "Day-to-day billing ops",
+    agenticvani: "Day-to-day billing ops",
     winner: "both",
   },
 ];
 
 const faqs = [
   {
-    q: "Does ShopDesk replace Tally?",
-    a: "No — and it's not meant to. Tally handles accounting, GST returns, balance sheets, and P&L statements. ShopDesk handles day-to-day operational tracking: RA Bills, BOQ, material reconciliation, salon appointments, and staff commissions. They solve different problems and work best together.",
+    q: "Does AgenticVani replace Tally?",
+    a: "No — and it's not meant to. Tally handles accounting, GST returns, balance sheets, and P&L statements. AgenticVani handles day-to-day operational tracking: RA Bills, BOQ, material reconciliation, salon appointments, and staff commissions. They solve different problems and work best together.",
   },
   {
-    q: "Can I use ShopDesk and Tally together?",
-    a: "Yes, that's actually the recommended setup. Use ShopDesk for daily project billing and operational tracking, then use Tally for final accounts, GST filing, and statutory compliance. Many contractors in Chandigarh and Mohali use both — ShopDesk for the field, Tally for the CA.",
+    q: "Can I use AgenticVani and Tally together?",
+    a: "Yes, that's actually the recommended setup. Use AgenticVani for daily project billing and operational tracking, then use Tally for final accounts, GST filing, and statutory compliance. Many contractors in Chandigarh and Mohali use both — AgenticVani for the field, Tally for the CA.",
   },
   {
     q: "Why can't I just track RA Bills in Tally?",
     a: "Tally is designed for ledger-based accounting, not project-level billing. It doesn't support BOQ-linked RA Bill calculations, material wastage tracking, earned value metrics (CPI/SPI), or construction-specific deductions like retention money tracking. You'd need to manually calculate all of this outside Tally anyway.",
   },
   {
-    q: "Is ShopDesk only for construction? What about salons?",
-    a: "ShopDesk includes both a Construction CRM (RA Bills, BOQ, EVM dashboard) and a Salon CRM (appointments, billing, staff commissions, inventory). Both are included in the ₹999 package — all 11 sheets.",
+    q: "Is AgenticVani only for construction? What about salons?",
+    a: "AgenticVani includes both a Construction CRM (RA Bills, BOQ, EVM dashboard) and a Salon CRM (appointments, billing, staff commissions, inventory). Both are included in the ₹999 package — all 11 sheets.",
   },
   {
-    q: "Tally costs ₹18,000. Why is ShopDesk only ₹999?",
-    a: "Tally is a full accounting suite with decades of development, GST compliance, and statutory features. ShopDesk is a focused operational tool built in Google Sheets — no server costs, no licensing overhead. Different products, different price points, different problems solved.",
+    q: "Tally costs ₹18,000. Why is AgenticVani only ₹999?",
+    a: "Tally is a full accounting suite with decades of development, GST compliance, and statutory features. AgenticVani is a focused operational tool built in Google Sheets — no server costs, no licensing overhead. Different products, different price points, different problems solved.",
   },
 ];
 
@@ -136,8 +136,8 @@ const shopDeskStrengths = [
   "Payment aging tracker (30/60/90 days)",
 ];
 
-function WinnerIcon({ winner }: { winner: "tally" | "shopdesk" | "both" }) {
-  if (winner === "shopdesk")
+function WinnerIcon({ winner }: { winner: "tally" | "agenticvani" | "both" }) {
+  if (winner === "agenticvani")
     return <Check size={14} className="shrink-0 text-teal" />;
   if (winner === "tally")
     return <Check size={14} className="shrink-0 text-teal" />;
@@ -160,7 +160,7 @@ export default function VsTallyPage() {
         schema={breadcrumbSchema([
           { name: "Home", url: "/" },
           { name: "Compare", url: "/vs/tally" },
-          { name: "ShopDesk vs Tally", url: "/vs/tally" },
+          { name: "AgenticVani vs Tally", url: "/vs/tally" },
         ])}
       />
 
@@ -175,7 +175,7 @@ export default function VsTallyPage() {
             <span className="mx-2">/</span>
             <span className="text-navy/60">Compare</span>
             <span className="mx-2">/</span>
-            <span className="text-navy">ShopDesk vs Tally</span>
+            <span className="text-navy">AgenticVani vs Tally</span>
           </nav>
 
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-orange/10 px-4 py-1.5 text-xs font-semibold text-orange">
@@ -183,7 +183,7 @@ export default function VsTallyPage() {
           </div>
 
           <h1 className="mb-6 font-[var(--font-heading)] text-[2rem] leading-[1.15] font-extrabold text-navy md:text-[2.75rem]">
-            ShopDesk vs Tally Prime:
+            AgenticVani vs Tally Prime:
             <br />
             The Honest Comparison
           </h1>
@@ -193,7 +193,7 @@ export default function VsTallyPage() {
             Tally is India&apos;s most popular accounting software — and it&apos;s
             excellent at what it does: GST returns, ledgers, balance sheets.
             But Tally was never built for project-level billing, RA Bill
-            tracking, or salon appointment management. That&apos;s where ShopDesk
+            tracking, or salon appointment management. That&apos;s where AgenticVani
             comes in. They&apos;re not competitors — they&apos;re complementary.
           </p>
 
@@ -202,7 +202,7 @@ export default function VsTallyPage() {
               href="/checkout/salon-crm"
               className="inline-flex items-center justify-center rounded-full bg-orange px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-hover min-h-[48px]"
             >
-              Get ShopDesk — ₹999 →
+              Get AgenticVani — ₹999 →
             </Link>
             <a
               href="#comparison"
@@ -221,7 +221,7 @@ export default function VsTallyPage() {
       >
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-8 font-[var(--font-heading)] text-[1.5rem] font-extrabold text-navy md:text-[2rem]">
-            Feature-by-Feature: Tally Prime vs ShopDesk
+            Feature-by-Feature: Tally Prime vs AgenticVani
           </h2>
 
           <div className="overflow-x-auto rounded-2xl border border-navy/5">
@@ -235,7 +235,7 @@ export default function VsTallyPage() {
                     Tally Prime
                   </th>
                   <th className="px-4 py-3 text-center font-bold text-orange md:px-6">
-                    ShopDesk
+                    AgenticVani
                   </th>
                 </tr>
               </thead>
@@ -269,14 +269,14 @@ export default function VsTallyPage() {
                         <WinnerIcon winner={row.winner} />
                         <span
                           className={`text-xs sm:text-sm ${
-                            row.winner === "shopdesk"
+                            row.winner === "agenticvani"
                               ? "font-medium text-navy"
                               : row.winner === "both"
                                 ? "text-navy/70"
                                 : "text-mid-grey"
                           }`}
                         >
-                          {row.shopdesk}
+                          {row.agenticvani}
                         </span>
                       </span>
                     </td>
@@ -288,7 +288,7 @@ export default function VsTallyPage() {
 
           <p className="mt-4 text-center text-xs text-mid-grey">
             Different tools for different jobs. Tally wins at accounting.
-            ShopDesk wins at operational billing.
+            AgenticVani wins at operational billing.
           </p>
         </div>
       </section>
@@ -297,7 +297,7 @@ export default function VsTallyPage() {
       <section className="bg-cream px-4 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-3 font-[var(--font-heading)] text-[1.5rem] font-extrabold text-navy md:text-[2rem]">
-            Do I Need to Choose Between Tally and ShopDesk?
+            Do I Need to Choose Between Tally and AgenticVani?
           </h2>
           <p className="mb-8 max-w-2xl text-base text-mid-grey">
             No. The best setup is{" "}
@@ -327,10 +327,10 @@ export default function VsTallyPage() {
               </p>
             </div>
 
-            {/* ShopDesk strengths */}
+            {/* AgenticVani strengths */}
             <div className="rounded-2xl border-2 border-orange/20 bg-white p-6">
               <div className="mb-4 inline-flex rounded-full bg-orange/10 px-3 py-1 text-xs font-bold text-orange">
-                Use ShopDesk for
+                Use AgenticVani for
               </div>
               <ul className="space-y-3">
                 {shopDeskStrengths.map((item) => (
@@ -358,7 +358,7 @@ export default function VsTallyPage() {
                 </span>
                 <span className="text-cream/40">+</span>
                 <span className="rounded-lg bg-orange px-3 py-1.5 text-sm font-bold text-white">
-                  ShopDesk
+                  AgenticVani
                 </span>
               </div>
               <div>
@@ -366,7 +366,7 @@ export default function VsTallyPage() {
                   Together is better than either alone.
                 </p>
                 <p className="text-sm text-cream/60">
-                  Tally for your CA. ShopDesk for your site. Total cost: ₹18,999
+                  Tally for your CA. AgenticVani for your site. Total cost: ₹18,999
                   — and you&apos;re covered end to end.
                 </p>
               </div>
@@ -391,11 +391,11 @@ export default function VsTallyPage() {
             {[
               {
                 title: "RA Bill Calculation",
-                desc: "Gross → +GST 12% → −Advance 20% → −Retention 10% → −TDS 2% → Net Payable. Tally doesn't do this. ShopDesk auto-calculates it.",
+                desc: "Gross → +GST 12% → −Advance 20% → −Retention 10% → −TDS 2% → Net Payable. Tally doesn't do this. AgenticVani auto-calculates it.",
               },
               {
                 title: "Material Wastage Alerts",
-                desc: "Track issued vs consumed materials. ShopDesk flags anything with >5% wastage automatically. Tally only tracks purchases.",
+                desc: "Track issued vs consumed materials. AgenticVani flags anything with >5% wastage automatically. Tally only tracks purchases.",
               },
               {
                 title: "Project-Level EVM",
@@ -403,7 +403,7 @@ export default function VsTallyPage() {
               },
               {
                 title: "Salon Daily Operations",
-                desc: "Appointments, walk-ins, stylist assignment, commission per service. Tally tracks revenue — ShopDesk tracks the work that generates it.",
+                desc: "Appointments, walk-ins, stylist assignment, commission per service. Tally tracks revenue — AgenticVani tracks the work that generates it.",
               },
             ].map((item) => (
               <div
@@ -452,7 +452,7 @@ export default function VsTallyPage() {
             Fill the Gap Tally Leaves Behind
           </h2>
           <p className="mb-8 text-center text-base text-mid-grey">
-            Keep Tally for accounting. Add ShopDesk for everything else — ₹999
+            Keep Tally for accounting. Add AgenticVani for everything else — ₹999
             one-time.
           </p>
 

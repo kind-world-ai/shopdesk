@@ -4,7 +4,7 @@ import { generateMetadata as genMeta } from "@/lib/seo";
 import { BlogList } from "@/components/blog/BlogList";
 
 export const metadata: Metadata = genMeta({
-  title: "ShopDesk Blog — Business Tips for Indian SMBs",
+  title: "AgenticVani Blog — Business Tips for Indian SMBs",
   description:
     "Practical guides for salon owners, construction contractors, and small businesses in India. RA Bill tips, salon management, GST filing, and business growth strategies.",
   path: "/blog",
@@ -13,7 +13,7 @@ export const metadata: Metadata = genMeta({
     "construction billing guide",
     "ra bill excel",
     "small business india blog",
-    "shopdesk blog",
+    "agenticvani blog",
   ],
 });
 
@@ -25,14 +25,14 @@ export default function BlogIndexPage() {
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <p className="mb-3 text-center text-sm font-semibold tracking-widest text-teal uppercase">
-          ShopDesk Blog
+          AgenticVani Blog
         </p>
         <h1 className="mb-3 text-center text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
           Business Tips for Indian SMBs
         </h1>
         <p className="mx-auto mb-10 max-w-xl text-center text-base text-mid-grey">
           Practical guides for salon owners, contractors, and small business
-          owners. Learn how to grow your business with ShopDesk.
+          owners. Learn how to grow your business with AgenticVani.
         </p>
 
         {/* Blog list with category filter */}

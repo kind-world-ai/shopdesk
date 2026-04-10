@@ -32,7 +32,7 @@ export function BottomCTA() {
         href="/shop"
         className="btn-glow flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-orange py-3.5 text-sm font-bold text-white min-h-[48px] transition-all hover:bg-orange-hover"
       >
-        ShopDesk — Browse Products
+        AgenticVani — Browse Products
       </Link>
     </div>
   );

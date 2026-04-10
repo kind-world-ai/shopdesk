@@ -42,7 +42,7 @@ export const cities: CityData[] = [
       "Multi-project tracking — manage Sector development and highway contracts simultaneously",
     ],
     socialProof: [
-      { stat: "50+", label: "Chandigarh businesses use ShopDesk" },
+      { stat: "50+", label: "Chandigarh businesses use AgenticVani" },
       { stat: "₹999", label: "One-time cost, no monthly fees" },
       { stat: "15 min", label: "Average setup time" },
       { stat: "4.8★", label: "Rating from Tricity users" },
@@ -66,7 +66,7 @@ export const cities: CityData[] = [
       {
         title: "One-time ₹999 — no monthly drain",
         description:
-          "Chandigarh salon owners already pay rent, staff salaries, and product costs. ShopDesk doesn't add another monthly subscription to your expenses.",
+          "Chandigarh salon owners already pay rent, staff salaries, and product costs. AgenticVani doesn't add another monthly subscription to your expenses.",
       },
     ],
     nearbyCity: { name: "Mohali", slug: "mohali" },
@@ -98,7 +98,7 @@ export const cities: CityData[] = [
       "Sub-contractor management — track payments to labour and material suppliers",
     ],
     socialProof: [
-      { stat: "40+", label: "Mohali businesses use ShopDesk" },
+      { stat: "40+", label: "Mohali businesses use AgenticVani" },
       { stat: "₹999", label: "One-time, no monthly fees" },
       { stat: "15 min", label: "Setup time on Google Sheets" },
       { stat: "4.8★", label: "Rating from Punjab users" },
@@ -117,7 +117,7 @@ export const cities: CityData[] = [
       {
         title: "Supports local business workflows",
         description:
-          "From Punjab PWD RA Bill formats to salon appointment styles popular in Tricity — ShopDesk fits how Mohali businesses actually work.",
+          "From Punjab PWD RA Bill formats to salon appointment styles popular in Tricity — AgenticVani fits how Mohali businesses actually work.",
       },
       {
         title: "₹999 one-time — SMB-friendly pricing",
@@ -154,7 +154,7 @@ export const cities: CityData[] = [
       "Multi-project management — handle simultaneous Haryana contracts efficiently",
     ],
     socialProof: [
-      { stat: "25+", label: "Panchkula businesses use ShopDesk" },
+      { stat: "25+", label: "Panchkula businesses use AgenticVani" },
       { stat: "₹999", label: "One-time payment, no subscriptions" },
       { stat: "15 min", label: "Setup time — no training needed" },
       { stat: "4.7★", label: "Rating from Haryana users" },
@@ -210,7 +210,7 @@ export const cities: CityData[] = [
       "Labour and sub-contractor payment tracking — manage large Ludhiana project teams",
     ],
     socialProof: [
-      { stat: "35+", label: "Ludhiana businesses use ShopDesk" },
+      { stat: "35+", label: "Ludhiana businesses use AgenticVani" },
       { stat: "₹999", label: "One-time, zero monthly fees" },
       { stat: "15 min", label: "From purchase to first entry" },
       { stat: "4.8★", label: "Rating from Punjab business owners" },
@@ -229,7 +229,7 @@ export const cities: CityData[] = [
       {
         title: "Handles Ludhiana volumes",
         description:
-          "Whether you run a 10-staff salon or manage 5 simultaneous construction projects, ShopDesk scales without slowing down.",
+          "Whether you run a 10-staff salon or manage 5 simultaneous construction projects, AgenticVani scales without slowing down.",
       },
       {
         title: "₹999 — Ludhiana businesses know value",
@@ -266,7 +266,7 @@ export const cities: CityData[] = [
       "Multi-project tracking — balance heritage restoration with modern development contracts",
     ],
     socialProof: [
-      { stat: "20+", label: "Amritsar businesses use ShopDesk" },
+      { stat: "20+", label: "Amritsar businesses use AgenticVani" },
       { stat: "₹999", label: "One-time, no hidden charges" },
       { stat: "15 min", label: "Setup time — start immediately" },
       { stat: "4.7★", label: "Rating from Amritsar users" },
@@ -275,7 +275,7 @@ export const cities: CityData[] = [
       {
         title: "Understands Amritsar's business mix",
         description:
-          "From bridal salons serving destination weddings to contractors restoring heritage buildings — ShopDesk handles the diversity of Amritsar's business landscape.",
+          "From bridal salons serving destination weddings to contractors restoring heritage buildings — AgenticVani handles the diversity of Amritsar's business landscape.",
       },
       {
         title: "Google Sheets — simple and reliable",

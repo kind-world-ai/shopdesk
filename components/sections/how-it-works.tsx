@@ -11,7 +11,7 @@ const steps = [
     body: "Purchase once. Download the .xlsx file. No account creation required. No waiting for access approval.",
     schemaName: "Download the sheet",
     schemaText:
-      "Purchase and download the ShopDesk CRM .xlsx file. No account needed.",
+      "Purchase and download the AgenticVani CRM .xlsx file. No account needed.",
   },
   {
     num: "02",
@@ -37,7 +37,7 @@ export function HowItWorksSection() {
   return (
     <section className="bg-[#1E293B] px-4 py-16 md:px-8 md:py-24">
       <HowToSchema
-        name="How to Set Up ShopDesk CRM"
+        name="How to Set Up AgenticVani CRM"
         description="Get your business management system running in 15 minutes"
         totalTime="PT15M"
         steps={steps.map((s) => ({ name: s.schemaName, text: s.schemaText }))}

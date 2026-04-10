@@ -17,8 +17,8 @@ const navLinks = [
   {
     label: "Compare",
     children: [
-      { name: "ShopDesk vs Excel", href: "/vs/basic-excel" },
-      { name: "ShopDesk vs Tally", href: "/vs/tally" },
+      { name: "AgenticVani vs Excel", href: "/vs/basic-excel" },
+      { name: "AgenticVani vs Tally", href: "/vs/tally" },
     ],
   },
   {
@@ -81,7 +81,7 @@ export function Navbar() {
           href="/"
           className={`text-xl font-extrabold tracking-tight transition-colors ${isDark ? "text-white" : "text-navy"}`}
         >
-          ShopDesk
+          AgenticVani
         </Link>
 
         {/* Desktop nav links */}

@@ -128,7 +128,7 @@ export default async function CaseStudyPage({
           <div className="grid gap-8 md:grid-cols-10">
             {/* Main content — 70% */}
             <article className="md:col-span-7">
-              <div className="prose-shopdesk">
+              <div className="prose-agenticvani">
                 <MdxContent source={study.content} />
               </div>
             </article>
@@ -171,7 +171,7 @@ export default async function CaseStudyPage({
                         Product
                       </span>
                       <span className="font-medium text-navy">
-                        ShopDesk {study.category} CRM
+                        AgenticVani {study.category} CRM
                       </span>
                     </li>
                   </ul>

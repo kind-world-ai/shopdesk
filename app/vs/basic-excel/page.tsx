@@ -8,13 +8,13 @@ import { CTABox } from "@/components/ui/CTABox";
 
 export const metadata: Metadata = genMeta({
   title:
-    "ShopDesk vs Excel — Why Contractors & Salons Switch from Basic Spreadsheets",
+    "AgenticVani vs Excel — Why Contractors & Salons Switch from Basic Spreadsheets",
   description:
-    "Compare ShopDesk vs building your own Excel spreadsheet. See which is faster, more accurate, and better for Indian business billing. ₹999 one-time.",
+    "Compare AgenticVani vs building your own Excel spreadsheet. See which is faster, more accurate, and better for Indian business billing. ₹999 one-time.",
   path: "/vs/basic-excel",
   keywords: [
     "excel vs crm software india",
-    "shopdesk vs excel",
+    "agenticvani vs excel",
     "ra bill excel template",
     "salon crm vs excel",
     "construction billing excel alternative",
@@ -26,81 +26,81 @@ const comparisonRows = [
   {
     feature: "Time to set up",
     excel: "20–80 hours",
-    shopdesk: "15 minutes",
+    agenticvani: "15 minutes",
     shopWins: true,
   },
   {
     feature: "RA Bill formula (India)",
     excel: "Build from scratch",
-    shopdesk: "Pre-built, tested",
+    agenticvani: "Pre-built, tested",
     shopWins: true,
   },
   {
     feature: "GST 12% + TDS 2% + Retention 10%",
     excel: "Manual every time",
-    shopdesk: "Auto-calculated",
+    agenticvani: "Auto-calculated",
     shopWins: true,
   },
   {
     feature: "Formula error protection",
     excel: "None (breaks often)",
-    shopdesk: "IFERROR on every formula",
+    agenticvani: "IFERROR on every formula",
     shopWins: true,
   },
   {
     feature: "EVM metrics (CPI, SPI, EAC)",
     excel: "Build complex formulas",
-    shopdesk: "Ready to use",
+    agenticvani: "Ready to use",
     shopWins: true,
   },
   {
     feature: "Material wastage auto-alert",
     excel: "Not possible without VBA",
-    shopdesk: "Built in",
+    agenticvani: "Built in",
     shopWins: true,
   },
   {
     feature: "Payment aging tracker",
     excel: "Manual date math",
-    shopdesk: "Auto 30/60/90 day",
+    agenticvani: "Auto 30/60/90 day",
     shopWins: true,
   },
   {
     feature: "Staff commission (salon)",
     excel: "Manual each month",
-    shopdesk: "Auto per service",
+    agenticvani: "Auto per service",
     shopWins: true,
   },
   {
     feature: "Cost",
     excel: "Free (your time)",
-    shopdesk: "₹999 once",
+    agenticvani: "₹999 once",
     shopWins: true,
   },
   {
     feature: "Support",
     excel: "None",
-    shopdesk: "Email + WhatsApp",
+    agenticvani: "Email + WhatsApp",
     shopWins: true,
   },
 ];
 
 const faqs = [
   {
-    q: "Is ShopDesk really just a Google Sheet?",
-    a: "Yes — ShopDesk is a professionally engineered Google Sheet with 373 validated formulas, IFERROR protection on every cell, and India-specific calculations for GST, TDS, and retention. You get all the familiarity of Google Sheets with none of the setup work.",
+    q: "Is AgenticVani really just a Google Sheet?",
+    a: "Yes — AgenticVani is a professionally engineered Google Sheet with 373 validated formulas, IFERROR protection on every cell, and India-specific calculations for GST, TDS, and retention. You get all the familiarity of Google Sheets with none of the setup work.",
   },
   {
-    q: "Can I customise ShopDesk like I would my own Excel sheet?",
+    q: "Can I customise AgenticVani like I would my own Excel sheet?",
     a: "Absolutely. Since it runs in Google Sheets, you can add columns, modify formulas, change colours, and adapt it to your business. The difference is you start with a working system instead of a blank sheet.",
   },
   {
     q: "What if I already have data in my existing Excel sheet?",
-    a: "You can copy-paste your existing data into ShopDesk. The formulas will auto-calculate based on your data. Most users complete the migration in under 30 minutes.",
+    a: "You can copy-paste your existing data into AgenticVani. The formulas will auto-calculate based on your data. Most users complete the migration in under 30 minutes.",
   },
   {
     q: "Why not just download a free Excel template from the internet?",
-    a: "Free templates typically have 10–20 basic formulas with no error protection. ShopDesk has 373 validated formulas with IFERROR on every one, plus India-specific GST, TDS, and retention calculations that free templates don't include. One formula break in a free template can cost you hours of debugging.",
+    a: "Free templates typically have 10–20 basic formulas with no error protection. AgenticVani has 373 validated formulas with IFERROR on every one, plus India-specific GST, TDS, and retention calculations that free templates don't include. One formula break in a free template can cost you hours of debugging.",
   },
   {
     q: "Is ₹999 a one-time payment or a subscription?",
@@ -113,7 +113,7 @@ const hiddenCosts = [
     icon: Clock,
     stat: "₹12,000+",
     label: "Your time",
-    desc: "40 hours to build × ₹300/hr = ₹12,000 of your time. ShopDesk costs ₹999.",
+    desc: "40 hours to build × ₹300/hr = ₹12,000 of your time. AgenticVani costs ₹999.",
   },
   {
     icon: AlertTriangle,
@@ -137,7 +137,7 @@ export default function VsBasicExcelPage() {
         schema={breadcrumbSchema([
           { name: "Home", url: "/" },
           { name: "Compare", url: "/vs/basic-excel" },
-          { name: "ShopDesk vs Excel", url: "/vs/basic-excel" },
+          { name: "AgenticVani vs Excel", url: "/vs/basic-excel" },
         ])}
       />
 
@@ -152,7 +152,7 @@ export default function VsBasicExcelPage() {
             <span className="mx-2">/</span>
             <span className="text-navy/60">Compare</span>
             <span className="mx-2">/</span>
-            <span className="text-navy">ShopDesk vs Excel</span>
+            <span className="text-navy">AgenticVani vs Excel</span>
           </nav>
 
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-orange/10 px-4 py-1.5 text-xs font-semibold text-orange">
@@ -160,17 +160,17 @@ export default function VsBasicExcelPage() {
           </div>
 
           <h1 className="mb-6 font-[var(--font-heading)] text-[2rem] leading-[1.15] font-extrabold text-navy md:text-[2.75rem]">
-            ShopDesk vs DIY Excel:
+            AgenticVani vs DIY Excel:
             <br />
             The Honest Comparison
           </h1>
 
           {/* Featured snippet target */}
           <p className="mb-8 max-w-2xl text-base leading-relaxed text-navy/70 md:text-lg">
-            ShopDesk IS a Google Sheet — but a professionally engineered one
+            AgenticVani IS a Google Sheet — but a professionally engineered one
             with 373 pre-built formulas, error protection, and Indian-specific
             calculations (GST, TDS, retention). Building the same in DIY Excel
-            would take 40–80 hours. ShopDesk costs ₹999 and is ready in 15
+            would take 40–80 hours. AgenticVani costs ₹999 and is ready in 15
             minutes.
           </p>
 
@@ -179,7 +179,7 @@ export default function VsBasicExcelPage() {
               href="/checkout/salon-crm"
               className="inline-flex items-center justify-center rounded-full bg-orange px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-hover min-h-[48px]"
             >
-              Get ShopDesk — ₹999 →
+              Get AgenticVani — ₹999 →
             </Link>
             <a
               href="#comparison"
@@ -198,7 +198,7 @@ export default function VsBasicExcelPage() {
       >
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-8 font-[var(--font-heading)] text-[1.5rem] font-extrabold text-navy md:text-[2rem]">
-            What&apos;s Actually Different Between ShopDesk and Regular Excel?
+            What&apos;s Actually Different Between AgenticVani and Regular Excel?
           </h2>
 
           {/* Mobile cards + Desktop table */}
@@ -213,7 +213,7 @@ export default function VsBasicExcelPage() {
                     DIY Excel / Sheets
                   </th>
                   <th className="px-4 py-3 text-center font-bold text-orange md:px-6">
-                    ShopDesk
+                    AgenticVani
                   </th>
                 </tr>
               </thead>
@@ -239,10 +239,10 @@ export default function VsBasicExcelPage() {
                       <span className="flex items-center justify-center gap-1.5">
                         <Check size={14} className="shrink-0 text-teal" />
                         <span className="hidden sm:inline">
-                          {row.shopdesk}
+                          {row.agenticvani}
                         </span>
                         <span className="sm:hidden text-xs">
-                          {row.shopdesk}
+                          {row.agenticvani}
                         </span>
                       </span>
                     </td>
@@ -253,7 +253,7 @@ export default function VsBasicExcelPage() {
           </div>
 
           <p className="mt-4 text-center text-xs text-mid-grey">
-            ShopDesk wins on every metric except upfront cost — but ₹999 vs 40+
+            AgenticVani wins on every metric except upfront cost — but ₹999 vs 40+
             hours of your time isn&apos;t even close.
           </p>
         </div>
@@ -326,7 +326,7 @@ export default function VsBasicExcelPage() {
                 But if you&apos;re a contractor raising RA Bills, or a salon
                 tracking 20+ services and 5+ staff
               </strong>{" "}
-              — ShopDesk saves you 40+ hours upfront and prevents expensive
+              — AgenticVani saves you 40+ hours upfront and prevents expensive
               billing mistakes. At ₹999 one-time, it costs less than one
               day&apos;s labour.
             </p>

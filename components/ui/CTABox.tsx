@@ -2,17 +2,17 @@ import Link from "next/link";
 
 const productData = {
   salon: {
-    name: "ShopDesk Salon CRM",
+    name: "AgenticVani Salon CRM",
     benefit: "Manage appointments, billing & staff commissions in one Google Sheet.",
     href: "/checkout/salon-crm",
   },
   construction: {
-    name: "ShopDesk Construction CRM",
+    name: "AgenticVani Construction CRM",
     benefit: "RA Bills, BOQ, material tracking & EVM dashboard — 373 formulas.",
     href: "/checkout/salon-crm",
   },
   both: {
-    name: "ShopDesk CRM",
+    name: "AgenticVani CRM",
     benefit: "Salon CRM + Construction CRM — all 11 sheets, 373 validated formulas.",
     href: "/checkout/salon-crm",
   },

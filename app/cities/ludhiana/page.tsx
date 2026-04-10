@@ -6,7 +6,7 @@ import { CityPage } from "@/components/pages/CityPage";
 const city = getCityBySlug("ludhiana")!;
 
 export const metadata: Metadata = genMeta({
-  title: "ShopDesk Ludhiana — Business Software for Salons & Contractors | ₹999",
+  title: "AgenticVani Ludhiana — Business Software for Salons & Contractors | ₹999",
   description:
     "Professional business management tools for Ludhiana businesses. Salon CRM, construction billing. ₹999 one-time. Trusted by 35+ Ludhiana businesses.",
   path: "/cities/ludhiana",
@@ -17,7 +17,7 @@ export const metadata: Metadata = genMeta({
     "construction billing software ludhiana",
     "ra bill software ludhiana",
     "beauty parlour software ludhiana",
-    "shopdesk ludhiana",
+    "agenticvani ludhiana",
   ],
 });
 

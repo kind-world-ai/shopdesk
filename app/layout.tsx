@@ -14,19 +14,20 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ShopDesk | Business Management Tools for Indian SMBs — ₹999",
+  metadataBase: new URL("https://agenticvani.com"),
+  title: "AgenticVani | Business Management Tools for Indian SMBs — ₹999",
   description:
     "Professional Excel-based CRM for salons, contractors & shops. RA Bill tracker, salon booking, material reconciliation. Download and use in 15 minutes. Trusted by 500+ businesses across Punjab.",
   keywords: [
     "salon crm india",
     "construction billing software",
     "ra bill tracker excel",
-    "shopdesk",
+    "agenticvani",
     "small business erp india",
     "chandigarh mohali business tools",
   ],
   openGraph: {
-    title: "ShopDesk — Run Your Business Like a Pro",
+    title: "AgenticVani — Run Your Business Like a Pro",
     description: "Professional tools at ₹999. No subscription. No IT setup.",
     images: [{ url: "/og/home.jpg", width: 1200, height: 630 }],
     locale: "en_IN",
@@ -34,13 +35,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@ShopDeskIN",
+    site: "@AgenticVaniIN",
   },
   alternates: {
-    canonical: "https://theshopdesk.in",
+    canonical: "https://agenticvani.com",
     languages: {
-      "en-IN": "https://theshopdesk.in",
-      "hi-IN": "https://theshopdesk.in/hi",
+      "en-IN": "https://agenticvani.com",
+      "hi-IN": "https://agenticvani.com/hi",
     },
   },
   robots: {

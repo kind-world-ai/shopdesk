@@ -7,15 +7,15 @@ import { ComparisonSection } from "@/components/sections/comparison";
 import { Star, CheckCircle2, HardHat, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "ShopDesk Construction CRM — RA Bill & Project Tracking | ₹999",
+  title: "AgenticVani Construction CRM — RA Bill & Project Tracking | ₹999",
   description:
     "Google Sheets-based construction project management for Indian contractors. RA Bill tracking, BOQ, material reconciliation, EVM dashboard, payment aging. 373 formulas. One-time ₹999. Used by contractors in Mohali, Chandigarh, Ludhiana, Delhi NCR.",
   openGraph: {
-    title: "ShopDesk Construction CRM — RA Bill Tracking Done Right",
+    title: "AgenticVani Construction CRM — RA Bill Tracking Done Right",
     description: "Complete construction billing in Google Sheets. ₹999 one-time.",
     locale: "en_IN",
   },
-  alternates: { canonical: "https://theshopdesk.in/construction" },
+  alternates: { canonical: "https://agenticvani.com/construction" },
 };
 
 const features = [
@@ -68,17 +68,17 @@ export default function ConstructionPage() {
   return (
     <>
       <ProductSchema
-        name="ShopDesk Construction CRM"
+        name="AgenticVani Construction CRM"
         description="Google Sheets-based project management and billing system for Indian contractors. Tracks RA Bills, BOQ, material reconciliation, EVM, payments. 373 formulas. One-time purchase."
         price="999"
         reviewCount="89"
       />
       <HowToSchema
-        name="How to Set Up ShopDesk Construction CRM"
+        name="How to Set Up AgenticVani Construction CRM"
         description="Get your construction project billing system running in 15 minutes"
         totalTime="PT15M"
         steps={[
-          { name: "Download the sheet", text: "Purchase and download the ShopDesk_Construction_CRM_v2.xlsx file." },
+          { name: "Download the sheet", text: "Purchase and download the AgenticVani_Construction_CRM_v2.xlsx file." },
           { name: "Upload to Google Drive", text: "Upload to Google Drive and click 'Open with Google Sheets'. Make a copy." },
           { name: "Enter project details", text: "Fill in the Project Setup tab — project name, contract value, GST%, TDS%, retention%." },
           { name: "Update BOQ items", text: "Add your BOQ quantities and rates. Net amounts auto-calculate." },
@@ -132,7 +132,7 @@ export default function ConstructionPage() {
             Features
           </p>
           <h2 className="mb-8 text-center text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
-            What Does ShopDesk Construction CRM Track?
+            What Does AgenticVani Construction CRM Track?
           </h2>
 
           <div className="grid gap-4 sm:grid-cols-2">

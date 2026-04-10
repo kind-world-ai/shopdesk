@@ -11,11 +11,11 @@ const trustBadges = [
 ];
 
 export const metadata: Metadata = {
-  title: "Shop — ShopDesk Products | Professional Business Tools",
+  title: "Shop — AgenticVani Products | Professional Business Tools",
   description:
-    "Browse ShopDesk products — CRM tools for salons, construction firms, and SMBs. One-time purchase, no subscription. Starting at ₹0.",
+    "Browse AgenticVani products — CRM tools for salons, construction firms, and SMBs. One-time purchase, no subscription. Starting at ₹0.",
   openGraph: {
-    title: "ShopDesk Products — Professional Business Tools",
+    title: "AgenticVani Products — Professional Business Tools",
     description:
       "CRM tools for Indian SMBs. One-time purchase starting at ₹0.",
   },
@@ -36,12 +36,12 @@ export default function ShopPage() {
               />
             ))}
           </div>
-          <span>500+ businesses trust ShopDesk</span>
+          <span>500+ businesses trust AgenticVani</span>
         </div>
 
         {/* Heading */}
         <p className="mb-2 text-center text-xs font-bold tracking-wider text-orange uppercase">
-          ShopDesk Products
+          AgenticVani Products
         </p>
         <h1 className="mb-3 text-center font-[var(--font-heading)] text-[1.75rem] font-extrabold text-navy md:text-[2.5rem]">
           Professional Business Tools

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-const SITE_URL = "https://theshopdesk.in";
-const SITE_NAME = "ShopDesk";
+const SITE_URL = "https://agenticvani.com";
+const SITE_NAME = "AgenticVani";
 const DEFAULT_OG_IMAGE = "/og/default.jpg";
 
 interface GenerateMetadataOptions {
@@ -43,7 +43,7 @@ export function generateMetadata({
       title,
       description,
       images: [ogImageUrl],
-      site: "@ShopDeskIN",
+      site: "@AgenticVaniIN",
     },
     robots: {
       index: true,

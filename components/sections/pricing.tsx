@@ -14,7 +14,7 @@ import {
 
 const plans = [
   {
-    name: "ShopDesk Lite",
+    name: "AgenticVani Lite",
     slug: "construction-crm",
     price: "₹0",
     original: null,
@@ -30,7 +30,7 @@ const plans = [
     popular: false,
   },
   {
-    name: "ShopDesk CRM",
+    name: "AgenticVani CRM",
     slug: "salon-crm",
     price: "₹999",
     original: "₹2,499",
@@ -48,8 +48,8 @@ const plans = [
     popular: true,
   },
   {
-    name: "ShopDesk Pro",
-    slug: "shopdesk-pro",
+    name: "AgenticVani Pro",
+    slug: "agenticvani-pro",
     price: "₹2,999",
     original: null,
     desc: "For power users",
@@ -61,7 +61,7 @@ const plans = [
       "Priority support",
     ],
     cta: "Upgrade to Pro",
-    ctaHref: "/checkout/shopdesk-pro",
+    ctaHref: "/checkout/agenticvani-pro",
     popular: false,
   },
   {

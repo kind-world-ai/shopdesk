@@ -127,7 +127,7 @@ export default async function BlogPostPage({
               </div>
 
               {/* MDX content */}
-              <div className="prose-shopdesk">
+              <div className="prose-agenticvani">
                 <MdxContent source={post.content} />
               </div>
 
@@ -171,7 +171,7 @@ export default async function BlogPostPage({
                 {/* Quick CTA */}
                 <div className="mt-5 rounded-2xl bg-navy p-5 text-center">
                   <p className="mb-2 text-sm font-bold text-cream">
-                    Try ShopDesk Free
+                    Try AgenticVani Free
                   </p>
                   <p className="mb-3 text-xs text-cream/50">
                     3 sheets. No credit card.

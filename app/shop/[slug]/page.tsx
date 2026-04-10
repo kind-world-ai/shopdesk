@@ -18,7 +18,7 @@ export async function generateMetadata({
   if (!product) return {};
 
   return {
-    title: `${product.name} — ${product.priceLabel} | ShopDesk`,
+    title: `${product.name} — ${product.priceLabel} | AgenticVani`,
     description: product.description,
     openGraph: {
       title: `${product.name} — ${product.priceLabel}`,
@@ -181,7 +181,7 @@ export default async function ProductDetailPage({
               {/* Comparison */}
               <div className="rounded-2xl border border-gray-200 bg-white p-6">
                 <h2 className="mb-4 text-lg font-bold text-navy">
-                  Why ShopDesk?
+                  Why AgenticVani?
                 </h2>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
@@ -191,7 +191,7 @@ export default async function ProductDetailPage({
                           Feature
                         </th>
                         <th className="pb-2 text-center font-bold text-orange">
-                          ShopDesk
+                          AgenticVani
                         </th>
                         <th className="pb-2 text-center font-medium text-mid-grey">
                           Paper/Excel

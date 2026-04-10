@@ -6,7 +6,7 @@ import { CityPage } from "@/components/pages/CityPage";
 const city = getCityBySlug("chandigarh")!;
 
 export const metadata: Metadata = genMeta({
-  title: "ShopDesk Chandigarh — Business Software for Salons & Contractors | ₹999",
+  title: "AgenticVani Chandigarh — Business Software for Salons & Contractors | ₹999",
   description:
     "Professional business management tools for Chandigarh businesses. Salon CRM, construction billing. ₹999 one-time. Trusted by 50+ Chandigarh businesses.",
   path: "/cities/chandigarh",
@@ -17,7 +17,7 @@ export const metadata: Metadata = genMeta({
     "construction billing software chandigarh",
     "ra bill software chandigarh",
     "beauty parlour software chandigarh",
-    "shopdesk chandigarh",
+    "agenticvani chandigarh",
   ],
 });
 

@@ -102,7 +102,7 @@ export function ProductsSection() {
           {activeTab === "salon" ? (
             <div>
               <h2 className="mb-1.5 text-xl font-bold text-navy md:text-2xl">
-                ShopDesk Salon CRM
+                AgenticVani Salon CRM
               </h2>
               <p className="mb-6 text-sm text-mid-grey">
                 Complete Salon Management in One Sheet — used by salons in
@@ -134,7 +134,7 @@ export function ProductsSection() {
           ) : (
             <div>
               <h2 className="mb-1.5 text-xl font-bold text-navy md:text-2xl">
-                ShopDesk Construction CRM
+                AgenticVani Construction CRM
               </h2>
               <p className="mb-6 text-sm text-mid-grey">
                 RA Bill & Project Tracking Done Right — trusted by contractors

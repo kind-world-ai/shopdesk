@@ -4,7 +4,7 @@ import { Instagram, Linkedin, Youtube } from "lucide-react";
 const products = [
   { name: "Salon CRM (₹999)", href: "/shop/salon-crm" },
   { name: "Construction CRM (Free)", href: "/shop/construction-crm" },
-  { name: "ShopDesk Pro (₹2,999)", href: "/shop/shopdesk-pro" },
+  { name: "AgenticVani Pro (₹2,999)", href: "/shop/agenticvani-pro" },
   { name: "Done-For-You (₹9,999)", href: "/shop/custom-setup" },
   { name: "All Products →", href: "/shop" },
 ];
@@ -15,8 +15,8 @@ const resources = [
   { name: "Salon Staff Commission", href: "/blog/salon-staff-commission" },
   { name: "RA Bill Complete Guide", href: "/blog/ra-bill-complete-guide" },
   { name: "RA Bill Format India", href: "/blog/ra-bill-format-india" },
-  { name: "ShopDesk vs Excel", href: "/vs/basic-excel" },
-  { name: "ShopDesk vs Tally", href: "/vs/tally" },
+  { name: "AgenticVani vs Excel", href: "/vs/basic-excel" },
+  { name: "AgenticVani vs Tally", href: "/vs/tally" },
   { name: "Salon Case Study", href: "/case-studies/salon-chandigarh" },
   { name: "Contractor Case Study", href: "/case-studies/contractor-mohali" },
   { name: "FAQ", href: "/faq" },
@@ -46,21 +46,21 @@ export function Footer() {
               href="/"
               className="mb-3 inline-block text-xl font-extrabold text-cream"
             >
-              ShopDesk
+              AgenticVani
             </Link>
             <p className="mb-4 text-sm text-cream/50">
               Professional Tools. Simple Price.
             </p>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com/shopdeskin"
+                href="https://instagram.com/agenticvani"
                 aria-label="Instagram"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-cream/50 transition-colors hover:bg-white/10 hover:text-cream"
               >
                 <Instagram size={16} />
               </a>
               <a
-                href="https://linkedin.com/company/shopdesk"
+                href="https://linkedin.com/company/agenticvani"
                 aria-label="LinkedIn"
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-cream/50 transition-colors hover:bg-white/10 hover:text-cream"
               >
@@ -139,7 +139,7 @@ export function Footer() {
               Contact
             </h4>
             <ul className="space-y-2 text-sm text-cream/60">
-              <li>hello@shopdesk.in</li>
+              <li>hello@agenticvani.com</li>
               <li>WhatsApp Support</li>
               <li>+91-98XXX-XXXXX</li>
               <li>Mohali, Punjab 140306</li>
@@ -149,7 +149,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-cream/30 md:flex-row">
-          <span>&copy; 2026 ShopDesk. All rights reserved.</span>
+          <span>&copy; 2026 AgenticVani. All rights reserved.</span>
           <div className="flex gap-4">
             <a href="#" className="hover:text-cream/50">
               Privacy Policy
@@ -165,7 +165,7 @@ export function Footer() {
 
         {/* Local SEO text */}
         <p className="mt-6 text-center text-[11px] leading-relaxed text-cream/20">
-          ShopDesk is used by small businesses, salons, construction
+          AgenticVani is used by small businesses, salons, construction
           contractors, and real estate developers across Chandigarh, Mohali,
           Panchkula, Zirakpur, Ludhiana, Amritsar, Delhi NCR, Jaipur, and
           cities across Punjab, Haryana, Rajasthan, and UP.

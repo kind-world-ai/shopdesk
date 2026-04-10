@@ -6,7 +6,7 @@ import { CityPage } from "@/components/pages/CityPage";
 const city = getCityBySlug("mohali")!;
 
 export const metadata: Metadata = genMeta({
-  title: "ShopDesk Mohali — Business Software for Salons & Contractors | ₹999",
+  title: "AgenticVani Mohali — Business Software for Salons & Contractors | ₹999",
   description:
     "Professional business management tools for Mohali businesses. Salon CRM, construction billing. ₹999 one-time. Trusted by 40+ Mohali businesses.",
   path: "/cities/mohali",
@@ -17,7 +17,7 @@ export const metadata: Metadata = genMeta({
     "construction billing software mohali",
     "ra bill software mohali",
     "beauty parlour software mohali",
-    "shopdesk mohali",
+    "agenticvani mohali",
   ],
 });
 

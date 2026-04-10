@@ -26,7 +26,7 @@ export interface Product {
 export const products: Product[] = [
   {
     slug: "salon-crm",
-    name: "ShopDesk CRM",
+    name: "AgenticVani CRM",
     price: 999,
     originalPrice: 2499,
     priceLabel: "₹999",
@@ -58,20 +58,20 @@ export const products: Product[] = [
     formulaCount: 373,
     testimonial: {
       quote:
-        "ShopDesk saved me 3 hours every day. My salon runs on autopilot now — bookings, billing, everything in one sheet.",
+        "AgenticVani saved me 3 hours every day. My salon runs on autopilot now — bookings, billing, everything in one sheet.",
       author: "Priya Kaur",
       role: "Owner, Glow Up Salon, Chandigarh",
     },
   },
   {
     slug: "construction-crm",
-    name: "ShopDesk Lite",
+    name: "AgenticVani Lite",
     price: 0,
     originalPrice: null,
     priceLabel: "₹0",
     originalPriceLabel: null,
     description:
-      "Get started for free with the essential sheets. Includes BOQ, RA Bill, and Dashboard — perfect for trying out ShopDesk before upgrading.",
+      "Get started for free with the essential sheets. Includes BOQ, RA Bill, and Dashboard — perfect for trying out AgenticVani before upgrading.",
     shortDesc: "Free starter kit",
     features: [
       "3 sheets: BOQ + RA Bill + Dashboard",
@@ -98,8 +98,8 @@ export const products: Product[] = [
     },
   },
   {
-    slug: "shopdesk-pro",
-    name: "ShopDesk Pro",
+    slug: "agenticvani-pro",
+    name: "AgenticVani Pro",
     price: 2999,
     originalPrice: null,
     priceLabel: "₹2,999",

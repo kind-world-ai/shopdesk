@@ -72,7 +72,7 @@ export function ProblemSection() {
 
         {/* Transition line */}
         <p className="mt-10 text-center text-lg font-semibold text-white/70 md:text-xl">
-          ShopDesk fixes all of this.{" "}
+          AgenticVani fixes all of this.{" "}
           <span className="text-[#14B8A6]">Automatically.</span>
         </p>
       </div>

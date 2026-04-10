@@ -9,7 +9,7 @@ function SuccessContent() {
   const searchParams = useSearchParams();
   const orderId = searchParams.get("order_id") || "N/A";
   const email = searchParams.get("email") || "your email";
-  const productName = searchParams.get("product") || "ShopDesk";
+  const productName = searchParams.get("product") || "AgenticVani";
 
   return (
     <section className="flex min-h-screen items-center justify-center bg-cream px-4">
@@ -76,7 +76,7 @@ function SuccessContent() {
                 3
               </span>
               <span className="text-sm text-navy/80">
-                Open in Google Sheets and start using ShopDesk
+                Open in Google Sheets and start using AgenticVani
               </span>
             </li>
           </ol>
@@ -85,7 +85,7 @@ function SuccessContent() {
         {/* CTAs */}
         <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
           <a
-            href="https://wa.me/919876543210?text=Hi%2C%20I%20just%20purchased%20ShopDesk%20and%20need%20help"
+            href="https://wa.me/919876543210?text=Hi%2C%20I%20just%20purchased%20AgenticVani%20and%20need%20help"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-navy/20 px-6 py-3 text-sm font-bold text-navy transition-colors hover:bg-navy/5 min-h-[48px]"

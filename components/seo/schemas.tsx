@@ -2,11 +2,11 @@ export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "ShopDesk",
-    url: "https://theshopdesk.in",
-    logo: "https://theshopdesk.in/logo.png",
+    name: "AgenticVani",
+    url: "https://agenticvani.com",
+    logo: "https://agenticvani.com/logo.png",
     description:
-      "ShopDesk provides professional business management tools for Indian SMBs — salons, contractors, and shops.",
+      "AgenticVani provides professional business management tools for Indian SMBs — salons, contractors, and shops.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Mohali",
@@ -16,12 +16,12 @@ export function OrganizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
-      email: "hello@shopdesk.in",
+      email: "hello@agenticvani.com",
       availableLanguage: ["English", "Hindi", "Punjabi"],
     },
     sameAs: [
-      "https://instagram.com/shopdeskin",
-      "https://linkedin.com/company/shopdesk",
+      "https://instagram.com/agenticvani",
+      "https://linkedin.com/company/agenticvani",
     ],
   };
 
@@ -51,14 +51,14 @@ export function ProductSchema({
     "@type": "Product",
     name,
     description,
-    brand: { "@type": "Brand", name: "ShopDesk" },
+    brand: { "@type": "Brand", name: "AgenticVani" },
     offers: {
       "@type": "Offer",
       price,
       priceCurrency: "INR",
       priceValidUntil: "2026-12-31",
       availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: "ShopDesk" },
+      seller: { "@type": "Organization", name: "AgenticVani" },
     },
     aggregateRating: {
       "@type": "AggregateRating",

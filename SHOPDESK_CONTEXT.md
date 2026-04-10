@@ -1,16 +1,16 @@
-# ShopDesk Project Context
+# AgenticVani Project Context
 
 ## Brand
-- Name: ShopDesk
+- Name: AgenticVani
 - Tagline: Professional Tools. Simple Price.
-- Domain: theshopdesk.in
+- Domain: agenticvani.com
 - Colors: Navy #1A1A2E | Orange #E87722 | Teal #00897B
 - Fonts: Plus Jakarta Sans (headings) + Inter (body)
 
 ## Products
 - Salon CRM: ₹999 one-time, Google Sheets, 11 sheets, 250+ formulas
 - Construction CRM: ₹999 one-time, Google Sheets, 11 sheets, 373 formulas
-- ShopDesk Pro: ₹2,999 — PDF automation + WhatsApp alerts
+- AgenticVani Pro: ₹2,999 — PDF automation + WhatsApp alerts
 - Done-For-You: ₹9,999 — custom configuration
 
 ## Target Market

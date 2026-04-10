@@ -13,7 +13,7 @@ const stats = [
 const flowSteps = [
   { icon: Smartphone, label: "Your Phone" },
   { icon: Cloud, label: "Google Drive" },
-  { icon: FileSpreadsheet, label: "ShopDesk Sheet" },
+  { icon: FileSpreadsheet, label: "AgenticVani Sheet" },
   { icon: BarChart3, label: "Auto Dashboard" },
 ];
 
@@ -36,7 +36,7 @@ export function SolutionSection() {
 
         {/* Subtext */}
         <p className="mx-auto mb-14 max-w-xl text-base leading-relaxed text-mid-grey md:text-lg">
-          ShopDesk builds professional business management tools inside Google
+          AgenticVani builds professional business management tools inside Google
           Sheets. No software. No servers. No subscriptions. Open on your phone,
           update from site, share with your team.
         </p>

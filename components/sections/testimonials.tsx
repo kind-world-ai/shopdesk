@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: "Staff commissions calculate karna ek nightmare tha. ShopDesk ne sab automate kar diya. My accountant loves it too.",
+    text: "Staff commissions calculate karna ek nightmare tha. AgenticVani ne sab automate kar diya. My accountant loves it too.",
     name: "Priya Sharma",
     role: "Owner — Glamour Studio, Sector 22, Chandigarh",
     detail: "",
@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: "I've used SAP, Tally, and basic Excel. ShopDesk is better than all for RA Bill tracking. The EVM dashboard is at PMC level.",
+    text: "I've used SAP, Tally, and basic Excel. AgenticVani is better than all for RA Bill tracking. The EVM dashboard is at PMC level.",
     name: "Amit Kumar",
     role: "Billing Engineer, Ludhiana",
     detail: "",
